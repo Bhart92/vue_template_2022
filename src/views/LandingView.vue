@@ -7,17 +7,15 @@
     </div>
     <img class="landing-mockup" src="../assets/landing-mockup.svg" alt="Image of three devices: an Iphone, Macbook Pro, and Ipad displaying the same website with optimized layouts for each device." />
   </section>
-  <section class="services-container">
-    <ServiceView/>
-  </section>
+    <AboutView />
 </template>
 
 <script>
-import ServiceView from "./ServiceView";
+import AboutView from "./AboutView";
 // @ is an alias to /src
 
 export default {
   name: "LandingView",
-  components: { ServiceView }
+  components: { AboutView }
 };
 </script>

@@ -1,0 +1,54 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 vw(10, $design-width-mobile);
+    .about-divider{
+        margin: vh(75, $design-height-mobile) auto;
+        content: "";
+        display: block;
+        position: inherit;
+        height: 3px;
+        width: 75px;
+        border-top: 3px dashed $lightBlue;
+    }
+    .about-module{
+        height: vh(200, $design-height-mobile);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: url('../assets/about-phone.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 10px 25px;
+        color: $white;
+        letter-spacing: vw(1, $design-width-mobile);
+        &:last-of-type{
+            position:relative;
+            left: vw(-5, $design-width-mobile);
+            align-self: flex-end;
+            background: url('../assets/about-phone-2.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: vh(345, $design-height-mobile);
+            max-height: 345px;
+        }
+        h1{
+            font-size: vw(20, $design-width-mobile);
+        }
+        .about-module-text{
+            padding: vh(8, $design-width-mobile);
+            span{
+                position: relative;
+                top: vh(-10, $design-height-mobile);
+                font-size: vw(16, $design-width-mobile);
+                line-height: vh(30, $design-height-mobile);
+                font-weight: 500;
+            }
+        }
+    }
+}
