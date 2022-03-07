@@ -1,0 +1,42 @@
+.landing-container{
+    background: url('../assets/landing-phone.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    // padding-top: vh(155, $design-height-desktop);
+    // background: -o-linear-gradient(305deg,#001099 0,#3ad9ff 96%);
+    // background: linear-gradient(145deg,#001099 0,#3ad9ff 96%);
+    .landing-hero{
+        width: 85%;
+        text-align: left;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+        font-size: vw(22, $design-width-mobile);
+        margin-top: vh(-265, $design-height-mobile);
+        h1{
+            font-weight: 700;
+            margin-bottom: vh(10, $design-height-mobile);
+        }
+        h2{
+            font-size: vw(14, $design-width-mobile);
+            margin-bottom: vh(20, $design-height-mobile);
+        }
+        .landing-btn{
+            font-size: vw(16, $design-width-mobile);
+            background: $blue;
+            border: 3px solid $white;
+            color: $white;
+
+        }
+    }
+    .landing-mockup{
+        height: vh(400, $design-height-mobile);
+        max-height: 345px;
+        width: 100%;
+        max-width: 405px;
+        position: absolute;
+        bottom: vh(65, $design-height-mobile);
+    }
+}

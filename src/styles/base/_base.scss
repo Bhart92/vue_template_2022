@@ -1,0 +1,104 @@
+@font-face
+{
+  font-family: "Lato";
+  src: url("../assets/fonts/latoReg.ttf") format("truetype");
+}
+
+@font-face
+{
+  font-family: "Lato";
+  src: url("../assets/fonts/latoLight.ttf") format("truetype");
+  font-weight: 300;
+}
+
+
+@font-face
+{
+  font-family: "Lato";
+  src: url("../assets/fonts/latoBold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body
+{
+  background: $white;
+  font-size: 20px;
+  width: 100vw;
+  height: calc(var(--vh) * 100);
+  top: 0;
+  left: 0;
+  position: fixed;
+  font-family: Lato;
+  overflow-x: hidden;
+  *{
+    //Things default to unselect because ios is dumb
+    //hopefully this doesnt break anything else
+    -webkit-user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  }
+  
+  -webkit-text-size-adjust: 100%; //Removes Font Boost as per https://github.com/newsdev/ai2html/issues/52
+  
+  @media screen and (max-width: $tablet)
+  {
+	font-size: 14px;
+  }
+  @media screen and (max-width: $phone-lg)
+  {
+	font-size: 12px;
+  }
+  @media screen and (max-width: $phone-md)
+  {
+	font-size: 10px;
+  }
+  @media screen and (max-width: $phone-sm)
+  {
+	font-size: 8px;
+  }
+}
+
+body
+{
+
+  overflow-x: hidden;
+}
+
+:root
+{
+  --vh: 1vh;
+  --vw: 1vw;
+  @include media-min($tablet-sm)
+  {
+	--vw: 1vw * 0.8;
+    --vh: 1vh * 0.8;
+  }
+}
+
+section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn{
+  outline: none;
+  border-radius: 5px;
+  background: $white;
+  color: $black;
+  border: none;
+  padding: 10px 0;
+  width: 35%;
+  font-weight: 500;
+}

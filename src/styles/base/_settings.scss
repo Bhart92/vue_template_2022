@@ -1,0 +1,79 @@
+$tablet: 650px;
+$tablet-sm: 650px;
+$phone-lg: 440px;
+$phone-md: 380px;
+$phone-sm: 330px;
+
+$tablet-landscape: 1050px;
+$phone-lg-landscape: 850px;
+$phone-md-landscape: 700px;
+$phone-sm-landscape: 600px;
+
+$design-width-mobile: 375;
+$design-height-mobile: 667;
+
+$design-width-desktop: 1280;
+$design-height-desktop: 800;
+
+//convert design pixel size to viewport width
+@function vw($pxSize, $design-width: $design-width-mobile)
+{
+  $size: $pxSize / $design-width;
+  
+  //@return $size * 100vw;
+  //@return calc(var(--vw) * #{$size * 100});
+  @return #{$size * 100}vw;
+}
+
+@function vh($pxSize, $design-height: $design-height-mobile)
+{
+  $size: $pxSize / $design-height;
+  //@return $size * 100vh;
+  @return calc(var(--vh) * #{$size * 100});
+}
+
+//screen height
+@function sh($size)
+{
+  @return calc(var(--vh) * #{$size});
+}
+
+@mixin media-min($media)
+{
+  @media only screen and (min-width: #{$media})
+  {
+	@content;
+  }
+}
+
+@mixin media-desktop()
+{
+  @media only screen and (min-width: #{$tablet-sm})
+  {
+	@content;
+  }
+}
+
+@mixin iphone-x($minWidth : 375px, $minHeight : 812px )
+{
+  @media only screen and (device-width: #{$minWidth}) and (device-height: #{$minHeight}) and (orientation: portrait)
+  {
+	@content;
+  }
+}
+
+@mixin box-sizing()
+{
+  &, *
+  {
+	box-sizing: border-box;
+  }
+}
+
+// Template colors
+$black: #0D0908;
+$white: #F3EFF5;
+$blue: #0D72BF;
+$light-green: #61D095;
+$darker-green: #48BF84;
+
