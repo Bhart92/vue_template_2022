@@ -17,7 +17,6 @@ import "./styles/styles.scss";
         document.body.style.setProperty("position", "absolute");
         store.commit("setTrueVH", vh);
         store.commit("setTrueVW", vw);
-        console.log(vh, vw);
     };
 
     const setViewportHeight = () =>

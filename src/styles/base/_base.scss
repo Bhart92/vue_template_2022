@@ -103,11 +103,27 @@ section{
   width: 35%;
   font-weight: 500;
 }
-
 .divider{
+  margin: vh(75, $design-height-mobile) auto;
+  transform: rotate(90deg);
+  content: "";
   display: block;
-  margin: vh(35, $design-height-mobile) auto;
-  width: vw(35, $design-width-mobile);
-  height: vh(30, $design-height-mobile);
-
+  position: inherit;
+  height: 3px;
+  width: 75px;
+  border-top: 3px dashed $lightBlue;
+}
+.service-divider{
+margin: vh(100, $design-height-mobile) auto;
+}
+.flex-col-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

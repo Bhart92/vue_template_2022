@@ -5,15 +5,6 @@
     align-items: flex-start;
     width: 100%;
     padding: 0 vw(10, $design-width-mobile);
-    .about-divider{
-        margin: vh(75, $design-height-mobile) auto;
-        content: "";
-        display: block;
-        position: inherit;
-        height: 3px;
-        width: 75px;
-        border-top: 3px dashed $lightBlue;
-    }
     .about-module{
         height: vh(200, $design-height-mobile);
         display: flex;
@@ -42,6 +33,9 @@
         }
         .about-module-text{
             padding: vh(8, $design-width-mobile);
+            position: relative;
+            z-index: 2;
+            display: block;
             span{
                 position: relative;
                 top: vh(-10, $design-height-mobile);
@@ -49,6 +43,16 @@
                 line-height: vh(30, $design-height-mobile);
                 font-weight: 500;
             }
+        }
+        .about-module-img{
+            position: absolute;
+            // bottom: 20px;
+            // right: 35px;
+            bottom: vh(20);
+            right: vw(35);
+            display: block;
+            z-index: 1;
+            border-radius: 35%;
         }
     }
 }

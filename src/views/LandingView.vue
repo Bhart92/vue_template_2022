@@ -8,14 +8,18 @@
     <img class="landing-mockup" src="../assets/landing-mockup.svg" alt="Image of three devices: an Iphone, Macbook Pro, and Ipad displaying the same website with optimized layouts for each device." />
   </section>
     <AboutView />
+    <ServiceView />
+    <PricingView />
 </template>
 
 <script>
 import AboutView from "./AboutView";
+import ServiceView from "./ServiceView";
+import PricingView from "./PricingView";
 // @ is an alias to /src
 
 export default {
   name: "LandingView",
-  components: { AboutView }
+  components: { AboutView, ServiceView, PricingView }
 };
 </script>

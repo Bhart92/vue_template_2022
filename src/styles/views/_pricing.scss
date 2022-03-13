@@ -1,0 +1,235 @@
+.pricing-container{
+    width: 100%;
+    height: auto;
+    margin-top: vh(360);
+    .pricing-module{
+        height: auto;
+        align-self: flex-end;
+        color: $black;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 40px;
+        min-width: vw(375);
+        .background-container{
+            border-radius: 50%;
+            background: url('../assets/our-clients.svg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: vh(415);
+            width: 100%;
+            position: absolute;
+            top: vh(-96);
+            bottom: 0;
+            right: vw(-195);
+            z-index: 1;
+            opacity: .15;
+        }
+        h1{
+            text-align: right;
+            font-size: vw(22, $design-width-mobile);
+            z-index: 2;
+            position: relative;
+            margin-bottom: vh(30);
+            &:after{
+                content: "";
+                display: block; 
+                width: 35px; 
+                padding-top: 2px;
+                border-bottom: 2px solid rgba(63, 156, 227, .95);
+                margin: 0 auto;
+            }            
+        }
+        .pricing-cost{
+            height: vw(95);
+            width: vw(95);
+            margin: 0 auto;
+            margin-top: vh(20);
+        }
+        .pricing-module-sub{
+            display: block;
+            position: relative;
+            z-index: 2;
+            text-align: left;
+            h2{
+                font-size: vw(26);
+            }
+            .pricing-sub-head{
+                margin-bottom: 0;
+            }
+            h3{
+                font-size: vw(10);
+                margin-top: vh(5);
+                text-align: center;
+                font-weight: 400;
+                &:last-of-type{
+                    font-size: vw(10);
+                    margin-bottom: vh(30);
+                    margin-top: 0;
+                }
+            }
+            h4{
+                font-size: vw(20);
+                margin-bottom: vh(20);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 2px solid rgba(63, 156, 227, .95);
+                    
+                }   
+
+            }
+            .pricing-includes-item{
+                margin: vh(50) auto;
+                display: flex;
+                &:first-of-type{
+                    margin-top: 0;
+                }
+                h5{
+                    font-size: vw(20);
+                    margin-bottom: vh(3);
+                    &:after{
+                        content: "";
+                        display: block; 
+                        width: 35px; 
+                        padding-top: 5px;
+                        border-bottom: 1px solid rgba(63, 156, 227, .95);
+                        margin-left: vw(2);
+                    }  
+                }
+                span{
+                font-size: vw(16);
+                }
+                .pricing-item-img{
+                    height: vh(35);
+                    width: vw(35);
+                    min-height: 35px;
+                    min-width: 35px;
+                    align-self: flex-start;
+                    margin-right: vw(15);
+                    margin-left: vw(-15);
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            span{
+                font-size: vw(15);
+                font-weight: 500;
+                line-height: vh(25);
+
+            }
+        }
+        .pricing-card-container{
+            .pricing-card{
+                border: 2px solid $lightBlue;
+                border-bottom: none;
+                height: auto;
+                position: relative;
+                margin: vh(30) auto;
+                .pricing-card-background{
+                    background: url('../assets/cardBackground.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    bottom: 0;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    display: block;
+                    z-index: 1;
+                    opacity: .15;
+                }
+                .pricing-card-cost{
+                    z-index: 2;
+                    margin-top: vh(23);
+                    span{
+                        font-size: vw(14);
+                        letter-spacing: vw(1.25);
+                        font-weight: 700;
+                    }
+                    h5{
+                        font-size: vw(42);
+                        font-weight: 700;
+                        color: $lightBlue;
+                        span{
+                            font-size: vw(12);
+                        }
+                    }
+                }
+                .pricing-card-list{
+                    z-index: 2;
+                    h6{
+                        font-size: vw(14);
+                        color: $lightBlue;
+                    }
+                    .pricing-card-info-wrap{
+                        margin: vh(10) 0 vh(3) 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        align-self: flex-start;
+                        .pricing-card-info{
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            margin: vh(15) 0 vh(5) 0;
+                            width: vw(215);
+                            max-width: vw(215);
+                            min-width: vw(215);
+                            span{
+                                align-self: flex-start;
+                                font-size: vw(15);
+                                margin: vh(5) 0;
+                                display: flex;
+                                align-items: center;
+                        }
+                        
+                        img{
+                            margin-right: vw(5);
+                            width: vw(32);
+                            height: vh(32);
+                        }
+                       }
+                    }
+                    button{
+                        z-index: 2;
+                        margin: vh(15) 0 vh(25) 0;
+                        padding: 8px 10px;
+                        outline: none;
+                        border: 2px solid $black;
+                        opacity: .75;
+                        background: transparent;
+                        border-radius: 25px;
+                        align-self: flex-start;
+                        font-weight: 700;
+                        color: $black;
+                        font-size: vw(12);
+                        letter-spacing: vw(.85);
+                    }
+                }
+                .pricing-card-title{
+                    z-index: 2;
+                    height: vh(45);
+                    border: 1px solid $lightBlue;
+                    width: 101%;
+                    color: $white;
+                    background-color: $lightBlue;
+                    h4{
+                        font-size: vh(18);
+                        letter-spacing: vw(2);
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

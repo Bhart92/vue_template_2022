@@ -1,0 +1,199 @@
+.services-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: auto;
+    .services-module{
+        height: vh(200, $design-height-mobile);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 40px;
+        color: $white;
+        letter-spacing: vw(1, $design-width-mobile);
+        position: relative;
+        z-index: 2;
+        &:last-of-type{
+            margin-top: vh(60);
+            height: auto;
+            align-self: flex-start;
+            color: $black;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            .background-container{
+                border-radius: 50%;
+                background: url('../assets/our-clients.svg');
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: vh(415);
+                width: 100%;
+                position: absolute;
+                top: vh(-10);
+                bottom: 0;
+                right: 0;
+                left: vw(-113);
+                z-index: 1;
+                opacity: .15;
+            }
+            h1{
+                margin-bottom: vh(10);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 2px solid rgba(63, 156, 227, .95)
+                }
+            }
+            
+            .service-module-img{
+                // position: absolute;
+                // bottom: vh(20);
+                // right: vw(35);
+                height: vh(105);
+                width: vw(105);
+                position: relative;
+                top: vh(-10);
+                left: vw(-15);
+                display: block;
+                z-index: 1;
+                align-self: flex-end;
+            }
+            .services-module-sub{
+                display: block;
+                position: relative;
+                z-index: 2;
+                span{
+                    font-size: vw(15);
+                    font-weight: 500;
+                    line-height: vh(25);
+
+                }
+            }
+        }
+
+        .background-container{
+            background: url('../assets/about-phone.svg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotate(45deg);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+        }
+        h1{
+            font-size: vw(20, $design-width-mobile);
+            z-index: 2;
+            
+        }
+    }
+    .services-card-container{
+        width: 100%;
+        position: relative;
+        display: block;
+        .services-card{
+            position: relative;
+            align-self: flex-end;
+            height: vh(415, $design-height-mobile);
+            max-height: 415px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: vw(375);
+            color: $white;
+            padding: 0 vw(58);
+
+            .service-card-background{
+                transform: rotate(180deg);
+                background: url(http://localhost:8080/img/about-phone-2.77ae0f8c.svg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100%;
+                width: 87%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                z-index: 2;
+                margin: 0 auto;
+            }
+            &:nth-of-type(2){
+                .service-card-background{
+                    background: url(../assets/card.svg);
+                    background-size: cover;
+                    background-position: center;            
+                    transform: rotate(354deg);
+
+                }
+                h3{
+                    &:after{
+                        content: "";
+                        display: block; 
+                        width: 35px; 
+                        padding-top: 5px;
+                        border-bottom: 2px solid rgba(97, 208, 149, .95);
+                    }
+                }
+                .services-card-info{
+                    span{
+                        a{
+                            color: darken($light-green, 30%);
+                            text-decoration: none;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            img{
+                height: 100px;
+                width: 100px;
+                background: rgba(97, 208, 149, .45);
+                padding: 5px;
+                border-radius: 50%;
+                display: block;
+                position: inherit;
+                z-index: 3;
+            }
+            h3{
+                font-size: vw(20);
+                display: block;
+                position: inherit;
+                z-index: 3;
+                font-weight: 700;
+                margin-bottom: vh(3);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 2px solid rgba(97, 208, 149, .95);
+                }
+            }
+            .services-card-info{
+                display: block;
+                position: inherit;
+                z-index: 3;
+                span{
+                    font-size: vw(15);
+                    line-height: vh(21);
+                }
+            }
+        }
+    }
+}

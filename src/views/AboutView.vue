@@ -1,6 +1,5 @@
 <template>
   <section class="about-container">
-  <div class="about-divider" />
 
    <div class=" about-module">
     <h1>A bit about us...</h1>
@@ -16,6 +15,8 @@
             fit their needs.
       </span>
     </div>
+    
+      <img class="about-module-img" src="../assets/face.png" alt="A happy looking face" />
    </div>
 
   </section>
