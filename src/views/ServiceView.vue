@@ -5,73 +5,32 @@
       <h1>What makes<br>our sites better?</h1>
     </div>
    <div class="services-card-container">
-    <div class="services-card">
-     <div class="service-card-background" />
-      <img src="../assets/seo.png" alt="A happy looking face" />
-      <h3>Optimization</h3>
-      <div class="services-card-info">
-        <span>
-          Our websites are optimized to perform.<br>
-          Fast load times, SEO, semantic tagging,<br>
-          and a mobile first approach ensure<br>
-          we stay on top of every search engine.
-        </span>
-      </div>
-    </div>
-    <div class="services-card">
-     <div class="service-card-background" />
-      <img src="../assets/mobile-first.png" alt="A happy looking face" />
-      <h3>Mobile-First Approach</h3>
-      <div class="services-card-info">
-        <span>
-          According to <a target="_blank" href="https://www.statista.com/topics/779/mobile-internet/#dossierKeyfigures" >Statista.com </a>
-          nearly 60%<br>
-          of all internet traffic comes from mobile<br>
-          devices. However, some website<br>
-          builders dont't take a mobile first<br>
-          approach. Resulting in A web page with<br>
-          subpar load times, Google rankings,<br>
-          and unoptimized mobile designs.
-        </span>
-      </div>
-    </div>
-    <div class="services-card">
-     <div class="service-card-background" />
-      <img src="../assets/responsive.png" alt="A happy looking face" />
-      <h3>Fully Responsive</h3>
-      <div class="services-card-info">
-        <span>
-          Responsive design means your website<br>
-          resizes according to the screen it is<br>
-          viewed on. By ensuring our projects are<br>
-          fully responsive we maximize each clients Google rankings.
-        </span>
-      </div>
-    </div>
+    <ServiceCard :image="'seo.png'" :title="'Optimization'"
+      :subText="'Our websites are optimized to perform. Fast load times, SEO, semantic tagging, and a mobile first approach ensure we stay on top of every search engine.'"
+    />
+
+    <ServiceCard :image="'mobile-first.png'" :title="'Mobile-First Approach'"
+      :subText="`Nearly 60% of all internet traffic comes from mobile devices. However, some website builders dont't take a mobile first approach. Resulting in A web page with subpar load times, Google rankings, and unoptimized mobile designs.`"
+    />
+
+    <ServiceCard :image="'responsive.png'" :title="'Fully Responsive'"
+      :subText="'Responsive design means your website resizes according to the screen it is viewed on. By ensuring our projects are fully responsive we maximize each clients Google rankings.'"
+    />
    </div>
-    <div class="services-module">
-      <div class="background-container" />
-      <h1>What does this<br>
-      mean for our clients?</h1>
-      <div class="services-module-sub">
-        <span>
-          Better Google rankings, more visitors,<br>
-          and bigger revenues as a result. Proper<br>
-          optimization can signficantly increase<br>
-          a website's exposure which in turn can<br>
-          in more business.
-        </span>
-      </div>
-      
-      <!-- <img class="service-module-img" src="../assets/traffic.png" alt="" /> -->
-    </div>
+
+   <ServiceAbout :title="'What does this mean for our clients?'"
+    :subText="`Better Google rankings, more visitors, and bigger revenues as a result. Proper optimization can signficantly increase a website's exposure which in turn can in more business.`"
+    />
   </section>
 </template>
 
 <script>
+import ServiceAbout from '../components/services/ServiceAbout.vue';
+import ServiceCard from '../components/services/ServiceCard.vue';
 // @ is an alias to /src
 
 export default {
   name: "ServiceView",
+  components: {ServiceCard, ServiceAbout}
 };
 </script>

@@ -5,6 +5,8 @@
     align-items: flex-start;
     width: 100%;
     padding: 0 vw(10, $design-width-mobile);
+    position: relative;
+    z-index: 3;
     .about-module{
         height: vh(200, $design-height-mobile);
         display: flex;

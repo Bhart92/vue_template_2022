@@ -10,16 +10,18 @@
     <AboutView />
     <ServiceView />
     <PricingView />
+    <PortfolioView />
 </template>
 
 <script>
 import AboutView from "./AboutView";
 import ServiceView from "./ServiceView";
 import PricingView from "./PricingView";
+import PortfolioView from "./PortfolioView";
 // @ is an alias to /src
 
 export default {
   name: "LandingView",
-  components: { AboutView, ServiceView, PricingView }
+  components: { AboutView, ServiceView, PricingView, PortfolioView}
 };
 </script>

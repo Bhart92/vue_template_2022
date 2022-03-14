@@ -1,5 +1,6 @@
 <template>
   <section class="about-container">
+  <div class="divider" />
 
    <div class=" about-module">
     <h1>A bit about us...</h1>
