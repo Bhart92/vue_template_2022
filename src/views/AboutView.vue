@@ -1,11 +1,8 @@
 <template>
   <section class="about-container">
-  <div class="divider" />
-
    <div class=" about-module">
     <h1>A bit about us...</h1>
    </div>
-
    <div class=" about-module">
     <div class="about-module-text">
       <span>We are an independent web<br>

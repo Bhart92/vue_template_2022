@@ -25,7 +25,7 @@
       </div>
       <div class="pricing-card-container">
 
-        <PricingCard :price="250" :cardHeader="'Integration with third party services'"
+        <PricingCard :price="200" :cardHeader="'Integration with third party services'"
         :cardSubHeader="'Pricing depends on features requested*'" :cardTitle="'Features + Standard'"
         :cardList="
             {

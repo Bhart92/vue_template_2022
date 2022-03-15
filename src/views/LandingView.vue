@@ -11,6 +11,7 @@
     <ServiceView />
     <PricingView />
     <PortfolioView />
+    <FooterSection />
 </template>
 
 <script>
@@ -18,10 +19,11 @@ import AboutView from "./AboutView";
 import ServiceView from "./ServiceView";
 import PricingView from "./PricingView";
 import PortfolioView from "./PortfolioView";
+import FooterSection from "../components/footer/FooterSection";
 // @ is an alias to /src
 
 export default {
   name: "LandingView",
-  components: { AboutView, ServiceView, PricingView, PortfolioView}
+  components: { AboutView, ServiceView, PricingView, PortfolioView, FooterSection}
 };
 </script>

@@ -1,0 +1,98 @@
+.footer-container{
+    position: relative;
+    justify-content: flex-end;
+    .footer-background{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: url('../assets/footerBackground.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .footer-logo{
+        position: relative;
+        top: vw(-20);
+        display: block;
+        z-index: 2;
+        height: vh(100);
+        display: flex;
+        align-items: flex-end;
+        width: 80%;
+        img{   
+            width: vw(60, $design-width-mobile);
+            height: vh(60, $design-height-mobile)
+        }
+        span{
+            color: $white;
+            color: $white;
+            font-size: vw(32, $design-width-mobile);
+            font-weight: 700;
+            padding-bottom: vh(7, $design-height-mobile);
+        }
+    }
+    .footer-info-container{
+        position: relative;
+        display: block;
+        z-index: 2;
+        color: $white;
+        width: 80%;
+        font-size: vw(16);
+        .footer-contact{
+            margin-bottom: vh(15);
+            h6{
+                font-size: vw(18);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 1px solid rgba(97, 208, 149, .95);
+                    margin-bottom: vh(5);
+                }  
+            }
+            span{
+                margin-bottom: vh(8);
+            }
+        }
+        .footer-navigation{
+            margin-bottom: vh(15);
+            h6{
+                font-size: vw(18);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 1px solid rgba(97, 208, 149, .95);
+                    margin-bottom: vh(5);
+                }   
+            }
+            span{
+                margin-bottom: vh(8);
+            }
+        }
+        .footer-services{
+            margin-bottom: vh(15);
+            h6{
+                font-size: vw(18);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 1px solid rgba(97, 208, 149, .95);
+                    margin-bottom: vh(5);
+                    
+                } 
+            }
+            span{
+                margin-bottom: vh(8);
+            }  
+        }
+    }
+}

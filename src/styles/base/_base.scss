@@ -122,6 +122,13 @@ margin: vh(100, $design-height-mobile) auto;
   align-items: center;
   justify-content: center;
 }
+.flex-col-start{
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 .flex-center{
   display: flex;
   align-items: center;
