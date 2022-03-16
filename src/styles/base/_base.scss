@@ -134,3 +134,6 @@ margin: vh(100, $design-height-mobile) auto;
   align-items: center;
   justify-content: center;
 }
+.overflow-toggle{
+  overflow: hidden!important;
+}

@@ -8,7 +8,8 @@ export default createStore({
 		designWidthMobile: 375,
 		designHeightMobile: 667,
 		designWidthDesktop: 1280,
-		designHeightDesktop: 800
+		designHeightDesktop: 800,
+		isDesktop: false
 	},
 	getters: {
 		//-----SCREEN DIMENSIONS-----
@@ -20,6 +21,10 @@ export default createStore({
 		{
 			return state.trueVH;
 		},
+		getisDesktop: state =>
+		{
+			return state.isDesktop;
+		},
 	},
 	mutations: {
 		//-----SCREEN DIMENSIONS-----
@@ -30,7 +35,11 @@ export default createStore({
 		setTrueVH(state, target)
 		{
 			state.trueVH = target;
-		}
+		},
+		setisDesktop( state, target )
+		{
+			state.isDesktop = target
+		},
 	},
   actions: {},
   modules: {},
