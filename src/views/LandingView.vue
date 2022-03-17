@@ -1,5 +1,5 @@
 <template>
-  <section class="landing-container">
+  <section class="landing-container main-background" id="landing-container">
     <div class="landing-hero">
       <h1>Web Development<br>+ Design</h1>
       <h2>Hand coded, custom websites,<br>optimized for you.</h2>

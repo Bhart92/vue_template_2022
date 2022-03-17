@@ -12,11 +12,10 @@
             </div>
             <div class="footer-navigation flex-col-start">
                 <h6>Navigation</h6>
-                <span>Home</span>
-                <span>About</span>
-                <span>Services</span>
-                <span>Pricing</span>
-                <span>Contact</span>
+                <router-link to="/" @click="scrollToTop">Home</router-link>
+                <router-link to="/about">About</router-link>
+                <router-link to="/services">Services</router-link>
+                <router-link to="/pricing">Pricing</router-link>
             </div>
             <div class="footer-services flex-col-start">
                 <h6>Services</h6>
@@ -31,6 +30,12 @@
 </template>
 <script>
 export default {
-    name: 'FooterSection'
+    name: 'FooterSection',
+    methods: {
+        scrollToTop(){
+            const body = document.querySelector('body');
+            body.scrollTo(0,0);
+        }
+    }
 }
 </script>

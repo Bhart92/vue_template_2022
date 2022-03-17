@@ -1,5 +1,5 @@
 <template>
-  <section class="portfolio-container">
+  <section class="portfolio-container" id="portfolio-container">
 
    <div class="portfolio-title">
     <h1>Some of our <span>works...</span></h1>
