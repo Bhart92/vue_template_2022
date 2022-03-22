@@ -1,7 +1,7 @@
 <template>
     <div class="pricing-includes-item">
         <div class="pricing-item-img">
-            <img :src="require(`../../assets/${image}`)" alt="" />
+            <img :src="require(`../../assets/check.svg`)" alt="" />
         </div>
         <div>
             <h5>{{title}}</h5>

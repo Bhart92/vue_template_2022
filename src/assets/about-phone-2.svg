@@ -1,1 +1,32 @@
-<svg id="visual" viewBox="0 0 450 900" width="450" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="450" height="900" fill="#F3EFF5"></rect><g transform="translate(237.66541856191031 417.337629972789)"><path d="M160.8 -160.6C189.1 -132.5 179.6 -66.2 186.2 6.7C192.9 79.5 215.8 159.1 187.4 206.4C159.1 253.8 79.5 268.9 6.3 262.6C-66.9 256.3 -133.9 228.5 -171.5 181.2C-209.2 133.9 -217.6 66.9 -223.3 -5.7C-228.9 -78.3 -231.8 -156.5 -194.2 -184.6C-156.5 -212.8 -78.3 -190.8 -6 -184.7C66.2 -178.7 132.5 -188.7 160.8 -160.6" fill="#3f9ce3"></path></g></svg>
+
+  <svg
+    width="2000"
+    height="2000"
+    viewBox="0 0 1000 1000"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      
+      
+      <linearGradient id="linearGradientId" gradientTransform="rotate(150 0.5 0.5)">
+      <stop offset="0%"  stop-color="#3e9ae1" />
+			<stop offset="100%"  stop-color="#1b67a2" />
+    </linearGradient>
+      
+      
+      
+      
+      <clipPath id="shape">
+        <path fill="currentColor" d="M885.5,628Q852,756,748.5,851Q645,946,503.5,935.5Q362,925,259,837.5Q156,750,111.5,625Q67,500,104,369.5Q141,239,255,167.5Q369,96,509,69.5Q649,43,764,134Q879,225,899,362.5Q919,500,885.5,628Z"></path>
+      </clipPath>
+    </defs>
+  
+    
+
+    <g  clip-path="url(#shape)">
+      <path fill="url(#linearGradientId)" d="M885.5,628Q852,756,748.5,851Q645,946,503.5,935.5Q362,925,259,837.5Q156,750,111.5,625Q67,500,104,369.5Q141,239,255,167.5Q369,96,509,69.5Q649,43,764,134Q879,225,899,362.5Q919,500,885.5,628Z" />
+    </g>
+
+    
+  
+  </svg>

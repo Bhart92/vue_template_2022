@@ -1,0 +1,77 @@
+
+        .services-item-wrapper{
+            width: 85%;
+            margin: vh(30) auto;
+            background-color: #fff;
+            border-bottom: none;
+            box-shadow: 0 0 25px 5px rgb(0 0 0 / 5%);
+            border-radius: 5px;
+            border-top: 5px solid $lightBlue;
+            &:first-of-type{
+                margin-top: vh(10);
+
+            }
+            &:nth-of-type(2){
+                .services-image{
+                    img{
+                        transform: scale(.9);
+                    }
+                }
+            }            
+            &:last-of-type{
+                .services-image{
+                    img{
+                        transform: scale(.9);
+                    }
+                }
+            }
+            .services-image{
+                height: vh(200);
+                width: 100%;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: 100%;
+                    width: vw(295);
+                }
+            }
+            .services-info{     
+                display: flex;
+                flex-direction: column;
+                padding: 0 0 vh(20) vw(15);
+                width: 85%;
+                margin: 0 auto;
+                // border-top: 2px solid $black;
+                // border-bottom: 2px solid $black;
+                background-color: #fff;
+                color: $black;
+
+                h6{
+                    font-size: vw(18);
+                    margin: vh(10) 0 vh(3) 0;
+                    &:after{
+                        content: "";
+                        display: block; 
+                        width: 35px; 
+                        padding-top: 2px;
+                        border-bottom: 2px solid $light-green;
+                        margin: vh(5) 0;
+                    }      
+                }
+                span{
+                    font-size: vw(14);
+                }
+                button{
+                    margin-top: vh(15);
+                    border: 2px solid $black;
+                    color: $black;
+                    background: transparent;
+                    padding: 8px 25px;
+                    border-radius: 10px;
+                    max-width: vw(100);
+
+                }
+            }
+        }

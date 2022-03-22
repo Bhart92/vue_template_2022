@@ -10,7 +10,7 @@
             <span>{{cardSubHeader}}</span>
             <div class="pricing-card-info-wrap">
                 <div class="pricing-card-info" v-for = "(item, index) in cardList" v-bind:key="item[index]" >
-                    <img :src="item.itemImg"/>
+                    <img src="../../assets/checkItem.svg"/>
                     <span>
                         {{item.itemInfo}}
                     </span>

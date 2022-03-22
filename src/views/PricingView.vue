@@ -10,8 +10,11 @@
           <h3>Three month minimum required*</h3>
           <h4>This includes:</h4>
           
-          <PricingIncludes :image="'infinite.png'"
+          <PricingIncludes :image="'check.svg'"
             :title="'Infinite edits'" :subText="'Our clients have unlimited website edits!'"/> 
+
+          <PricingIncludes :image="'check.svg'"
+            :title="'Lifetime Optimization'" :subText="'Our subscription includes lifetime updates to SEO & accessibility.'"/> 
 
           <PricingIncludes :image="'domain.png'"
             :title="'Hosting fees built-in'" :subText="'We take the stress out of hosting so you can focus on business.'"/>

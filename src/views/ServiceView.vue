@@ -1,19 +1,18 @@
 <template>
   <section class="services-container">
     <div class=" services-module">
-      <div class="background-container" />
       <h1>What makes<br>our sites better?</h1>
     </div>
    <div class="services-card-container">
-    <ServiceCard :image="'seo.png'" :title="'Optimization'"
+    <ServiceCard :image="'optimize.png'" :title="'Optimization'"
       :subText="'Our websites are optimized to perform. Fast load times, SEO, semantic tagging, and a mobile first approach ensure we stay on top of every search engine.'"
     />
 
-    <ServiceCard :image="'mobile-first.png'" :title="'Mobile-First Approach'"
+    <ServiceCard :image="'mobile-first.svg'" :title="'Mobile-First Approach'"
       :subText="`Nearly 60% of all internet traffic comes from mobile devices. However, some website builders dont't take a mobile first approach. Resulting in A web page with subpar load times, Google rankings, and unoptimized mobile designs.`"
     />
 
-    <ServiceCard :image="'responsive.png'" :title="'Fully Responsive'"
+    <ServiceCard :image="'responsive.svg'" :title="'Fully Responsive'"
       :subText="'Responsive design means your website resizes according to the screen it is viewed on. By ensuring our projects are fully responsive we maximize each clients Google rankings.'"
     />
    </div>

@@ -1,21 +1,24 @@
 <template>
-    <div class="services-card">
-     <div class="service-card-background" />
-        <img :src="require(`../../assets/${image}`)" alt="" />
-      <h3>{{title}}</h3>
-      <div class="services-card-info">
-        <span>
-          {{subText}}
-        </span>
-      </div>
+    <div class="services-item-wrapper">
+        <div class="services-image">
+            <img :src="require(`../../assets/${image}`)" />
+        </div>
+        <div class="services-info">
+            <h6>{{title}}</h6>
+            <span>{{subText}}</span>
+            <DefaultBtn :text="'Visit'"/>
+        </div>
     </div>
 </template>
 <script>
+import DefaultBtn from '../base/DefaultBtn.vue';
+
 export default {
+    components: {DefaultBtn},
     props: {
-        image: {type: String},
         title: {type: String},
         subText: {type: String},
+        image: {type: String}
     }
 }
 </script>

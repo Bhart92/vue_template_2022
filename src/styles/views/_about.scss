@@ -7,51 +7,86 @@
     padding: 0 vw(10, $design-width-mobile);
     position: relative;
     z-index: 3;
+    .divider{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        margin: 0 auto;
+        top: -25px;
+        .bubble{
+            background: $lightBlue;
+            border-radius: 50%;
+            height: 35px;
+            width: 35px;
+            position: absolute;
+            top: -65px;
+            left: 0;
+            opacity: .5;
+            &:nth-of-type(3){
+                top: -10px;
+                left: 35px;
+            }
+            &:nth-of-type(2){
+                top: 18px;
+                left: 30px;
+            }
+            &:last-of-type{
+                top: 40px;
+                left: 15px;
+            }
+        }
+    }
     .about-module{
-        height: vh(200, $design-height-mobile);
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: url('../assets/about-phone.svg');
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+        // background: url('../assets/about-phone-1.svg');
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
         padding: 10px 25px;
-        color: $white;
+        color: $black;
         letter-spacing: vw(1, $design-width-mobile);
-        &:last-of-type{
-            position:relative;
-            left: vw(-5, $design-width-mobile);
-            align-self: flex-end;
-            background: url('../assets/about-phone-2.svg');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: vh(345, $design-height-mobile);
-            max-height: 345px;
-        }
         h1{
             font-size: vw(20, $design-width-mobile);
+            &:after{
+                content: "";
+                display: block; 
+                width: 35px; 
+                padding-top: 2px;
+                border-bottom: 2px solid rgba(63, 156, 227, .95);
+                margin-top: vh(15);
+            }  
         }
         .about-module-text{
-            padding: vh(8, $design-width-mobile);
+            padding-top: vh(23);
             position: relative;
             z-index: 2;
             display: block;
-            span{
+            .text{
                 position: relative;
                 top: vh(-10, $design-height-mobile);
                 font-size: vw(16, $design-width-mobile);
                 line-height: vh(30, $design-height-mobile);
                 font-weight: 500;
+                .highlight{
+                    color: $lightBlue;
+                }
+                .about-module-link{
+                    color: $light-green;
+                    text-decoration: none;
+                }
             }
         }
         .about-module-img{
             position: absolute;
+            height: vh(225);
+            width: vw(325);
             // bottom: 20px;
             // right: 35px;
-            bottom: vh(20);
-            right: vw(35);
+            top: vh(157);
+            right: vw(-61);
             display: block;
             z-index: 1;
             border-radius: 35%;

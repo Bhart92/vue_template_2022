@@ -1,5 +1,6 @@
 <template>
   <section class="landing-container main-background" id="landing-container">
+    <MenuContainer />
     <div class="landing-hero">
       <h1>Web Development<br>+ Design</h1>
       <h2>Hand coded, custom websites,<br>optimized for you.</h2>
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import MenuContainer from "../components/NavBar/MenuContainer";
 import AboutView from "./AboutView";
 import ServiceView from "./ServiceView";
 import PricingView from "./PricingView";
@@ -24,6 +26,6 @@ import FooterSection from "../components/footer/FooterSection";
 
 export default {
   name: "LandingView",
-  components: { AboutView, ServiceView, PricingView, PortfolioView, FooterSection}
+  components: { MenuContainer ,AboutView, ServiceView, PricingView, PortfolioView, FooterSection}
 };
 </script>

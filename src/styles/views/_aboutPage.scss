@@ -1,16 +1,27 @@
 .about-page{
-    background: url('../assets/landing-phone.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: vh(150);
+    padding-top: vh(123);
+    background-position: 25%;
+    height: auto;
+    .background-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        z-index: 1;
+    }
     main{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
+        z-index: 2;
+        padding: 0 vw(15);
         h1{
             color: $white;
             font-size: vw(26);
@@ -26,13 +37,70 @@
         .about-description{
             color: $white;
             margin-top: vh(15);
-            span{
+            p{
                 font-size: vw(16);
                 line-height: vh(25);
+                span{
+                    color: $light-green!important;
+
+                }
+            }
+        }
+        .about-extra{
+            margin-top: vh(150);
+            position: relative;
+            .about-extra-image{
+                position: absolute;
+                top: vh(118);
+                right: vw(-37);
+                width: vw(165);
+                transform: scale(1.25);
+                display: block;
+                z-index: 1;
+                opacity: .85;
+            }
+            h1{
+                color: $black;
+                margin-bottom: vh(20);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 2px solid $lightBlue;
+                    
+                }   
+            }
+            .about-extra-desc{
+                position: relative;
+                display: block;
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                p{
+                    line-height: vh(25);
+                    font-size: vw(17);
+                    .highlight{
+                        color: $lightBlue;
+                    }
+                }
+                .about-services-link{
+                    border: 2px solid $black;
+                    color: $black;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    padding: 10px 27px;
+                    margin: 0 auto;
+                    align-self: center;
+                    margin-top: vh(45);
+                    margin-bottom: vh(-25);
+                    font-size: vw(17);
+                }
             }
         }
     }
-    img{
+    .about-bottom-graphic{
         height: vh(90);
         width: vw(90);
         position: absolute;

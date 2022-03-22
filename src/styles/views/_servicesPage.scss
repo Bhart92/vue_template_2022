@@ -1,3 +1,682 @@
 .services-page{
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: vh(100);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    .services-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        z-index: 1;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        position: inherit;
+        z-index: 2;
+        width: 80%;
+        margin: 0 auto;
+        h1{
+            color: $white;
+            font-size: vw(34);
+            &:after{
+                content: "";
+                display: block; 
+                width: 35px; 
+                padding-top: 5px;
+                border-bottom: 2px solid $light-green;
+                
+            }   
+        }
+        .services-description{
+            color: $white;
+            margin-top: vh(8);
+            display: flex;
+            flex-direction: column;
+            line-height: vh(19.5);
+            width: 100%;
+            .services-description-span{
+                font-size: vw(17);
+                margin-bottom: vh(85);
+            }
+        }
+        .services-seo{
+            height: auto;
+            h2{
+                text-align: right;
+                color: $black;
+                font-size: vw(28);
+                opacity: .8;
+                position: relative;
+                line-height: vh(28);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    margin: 0 auto;
+                    position: absolute;
+                    right: 0;
+                    padding-top: vh(5);
+                    border-bottom: 2px solid $light-green;
+                    
+                }   
+            }
+            .services-card-container{
+                width: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-top: vh(20);
+                .services-icon-image{
+                    position: absolute;
+                    bottom: vh(48);
+                    right: vw(5);
+                    height: vh(115);
+                    width: vw(115);
+                    transform: scale(1.2);
+                }
+            .services-icon-wrapper{
+                margin: vh(10) 0;
+                display: flex;
+
+                img{
+                    height: vh(32);
+                    width: vw(32);
+                    margin-right: vw(5);
+                }
+                span{
+                    font-size: vw(17);
+                    line-height: vh(25);
+                    color: $black;
+                }
+
+            }
+                .services-card{
+                    position: relative;
+                    height: vh(415, $design-height-mobile);
+                    max-height: 415px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: vw(375);
+                    color: $white;
+                    padding: 0 vw(58);
+        
+                    .service-card-background{
+                        background: url(../assets/about-phone-2.svg);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        display: block;
+                        z-index: 2;
+                        margin: 0 auto;
+                    }
+                    &:nth-of-type(2){
+                        .service-card-background{
+                            background: url(../assets/card.svg);
+                            background-size: cover;
+                            background-position: center;
+                            transform: rotate(182deg);
+        
+                        }
+                        h3{
+                            &:after{
+                                content: "";
+                                display: block; 
+                                width: 35px; 
+                                padding-top: 5px;
+                                border-bottom: 2px solid rgba(97, 208, 149, .95);
+                            }
+                        }
+                        .services-card-info{
+                            span{
+                                a{
+                                    color: darken($light-green, 30%);
+                                    text-decoration: none;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-of-type{
+                        .service-card-background{
+                            transform: rotate(65deg);
+                        }
+                    }
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        background: rgba(97, 208, 149, .45);
+                        padding: 5px;
+                        border-radius: 50%;
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                    }
+                    h3{
+                        font-size: vw(20);
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                        font-weight: 700;
+                        margin-bottom: vh(3);
+                        &:after{
+                            content: "";
+                            display: block; 
+                            width: 35px; 
+                            padding-top: 5px;
+                            border-bottom: 2px solid rgba(97, 208, 149, .95);
+                        }
+                    }
+                    .services-card-info{
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                        span{
+                            font-size: vw(15);
+                            line-height: vh(21);
+                        }
+                    }
+                }
+            }
+            
+    .services-module{
+        height: vh(200, $design-height-mobile);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: vh(50) vw(40) vh(10) vw(40);
+        color: $white;
+        letter-spacing: vw(1, $design-width-mobile);
+        position: relative;
+        z-index: 2;
+        &:last-of-type{
+            margin-top: vh(106);
+            height: auto;
+            align-self: flex-start;
+            color: $black;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            .background-container{
+                border-radius: 50%;
+                background: url('../assets/our-clients.svg');
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: vh(350);
+                width: 100%;
+                position: absolute;
+                top: vh(-25);
+                bottom: 0;
+                right: 0;
+                left: vw(-113);
+                z-index: 1;
+                opacity: .1;
+            }
+            h1{
+                margin-bottom: vh(10);
+                color: $black;
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px; 
+                    padding-top: 5px;
+                    border-bottom: 2px solid rgba(63, 156, 227, .95)
+                }
+            }
+            
+            .service-module-img{
+                height: vh(105);
+                width: vw(105);
+                position: relative;
+                top: vh(-10);
+                left: vw(-15);
+                display: block;
+                z-index: 1;
+                align-self: flex-end;
+            }
+            .services-module-sub{
+                display: block;
+                position: relative;
+                z-index: 2;
+                span{
+                    font-size: vw(15);
+                    font-weight: 500;
+                    line-height: vh(25);
+
+                }
+            }
+        }
+        .background-container{
+            background: url('../assets/about-phone.svg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotate(45deg);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+        }
+        h1{
+            font-size: vw(20, $design-width-mobile);
+            z-index: 2;
+            
+        }
+        }
+        }
+        .services-logo{
+            margin-top: vh(120);
+            position: relative;                
+            .background-container{
+                border-radius: 50%;
+                background: url('../assets/our-clients.svg');
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: vh(415);
+                position: absolute;
+                top: vh(9);
+                bottom: 0;
+                right: vw(-28);
+                left: vw(-104);
+                z-index: 1;
+                opacity: .15;
+            }
+            
+            h2{
+                text-align: left;
+                color: $black;
+                font-size: vw(28);
+                opacity: .8;
+                position: relative;
+                line-height: vh(28);
+                margin-bottom: vh(15);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px;
+                    padding-top: vh(5);
+                    border-bottom: 2px solid $light-green;
+                    
+                }   
+            }
+            .subHeader{
+                color: $black;
+                width: 80%;
+                margin: vh(10) auto;
+                font-size: vw(17);
+                line-height: vh(19.5);
+
+            }
+            .services-card-container{
+                width: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-top: vh(20);
+                .services-icon-image{
+                    position: absolute;
+                    bottom: vh(75);
+                    right: vw(25);
+                    height: vh(115);
+                    width: vw(115);
+                }
+            .services-icon-wrapper{
+                margin: vh(10) 0;
+                display: flex;  
+                // flex-direction: row-reverse;
+                img{
+                    height: vh(32);
+                    width: vw(32);
+                    margin-right: vw(5);
+                }
+                span{
+                    font-size: vw(17);
+                    line-height: vh(25);
+                    color: $black;
+                }
+
+            }
+                .services-card{
+                    position: relative;
+                    height: vh(415, $design-height-mobile);
+                    max-height: 415px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: vw(375);
+                    color: $white;
+                    padding: 0 vw(58);
+        
+                    .service-card-background{
+                        background: url(../assets/about-phone-2.svg);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        display: block;
+                        z-index: 2;
+                        margin: 0 auto;
+                    }
+                    &:nth-of-type(2){
+                        .service-card-background{
+                            background: url(../assets/card.svg);
+                            background-size: cover;
+                            background-position: center;
+                            transform: rotate(182deg);
+        
+                        }
+                        h3{
+                            &:after{
+                                content: "";
+                                display: block; 
+                                width: 35px; 
+                                padding-top: 5px;
+                                border-bottom: 2px solid rgba(97, 208, 149, .95);
+                            }
+                        }
+                        .services-card-info{
+                            span{
+                                a{
+                                    color: darken($light-green, 30%);
+                                    text-decoration: none;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-of-type{
+                        .service-card-background{
+                            transform: rotate(65deg);
+                        }
+                    }
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        background: rgba(97, 208, 149, .45);
+                        padding: 5px;
+                        border-radius: 50%;
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                    }
+                    h3{
+                        font-size: vw(20);
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                        font-weight: 700;
+                        margin-bottom: vh(3);
+                        &:after{
+                            content: "";
+                            display: block; 
+                            width: 35px; 
+                            padding-top: 5px;
+                            border-bottom: 2px solid rgba(97, 208, 149, .95);
+                        }
+                    }
+                    .services-card-info{
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                        span{
+                            font-size: vw(15);
+                            line-height: vh(21);
+                        }
+                    }
+                }
+            }
+            .services-logo-designer{
+                height: vh(150);
+                width: vw(150);
+                position: absolute;
+                bottom: vh(-100);
+                right: 0;
+                transform: scale(1.2);
+                z-index: 5;
+            }
+        }
+        .services-updates{
+            margin-top: vh(200);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;   
+            .background-container{
+                border-radius: 50%;
+                background: url('../assets/our-clients.svg');
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: vh(415);
+                position: absolute;
+                top: vh(-23);
+                bottom: 0;
+                right: vw(-60);
+                left: vw(-30);
+                z-index: 1;
+                opacity: .15;
+            }
+            
+            h2{
+                text-align: right;
+                color: $black;
+                font-size: vw(28);
+                opacity: .8;
+                position: relative;
+                line-height: vh(28);
+                margin-bottom: vh(15);
+                &:after{
+                    content: "";
+                    display: block; 
+                    width: 35px;
+                    position: absolute;
+                    right: 0;
+                    padding-top: vh(5);
+                    border-bottom: 2px solid $light-green;
+                    
+                }   
+            }
+            .subHeader{
+                color: $black;
+                text-align: right;
+                width: 100%;
+                margin-bottom: vh(15);
+                font-size: vw(17);
+                line-height: vh(19.5);
+
+            }
+            .services-card-container{
+                width: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                align-items: flex-start;
+                justify-content: flex-start;
+                .services-icon-image{
+                    position: absolute;
+                    bottom: vh(75);
+                    right: vw(25);
+                    height: vh(115);
+                    width: vw(115);
+                }
+            .services-icon-wrapper{
+                margin: vh(10) 0;
+                display: flex;  
+                // flex-direction: row-reverse;
+                img{
+                    height: vh(32);
+                    width: vw(32);
+                    margin-right: vw(5);
+                }
+                span{
+                    font-size: vw(17);
+                    line-height: vh(25);
+                    color: $black;
+                }
+
+            }
+                .services-card{
+                    position: relative;
+                    height: vh(415, $design-height-mobile);
+                    max-height: 415px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: vw(375);
+                    color: $white;
+                    padding: 0 vw(58);
+        
+                    .service-card-background{
+                        background: url(../assets/about-phone-2.svg);
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        display: block;
+                        z-index: 2;
+                        margin: 0 auto;
+                    }
+                    &:nth-of-type(2){
+                        .service-card-background{
+                            background: url(../assets/card.svg);
+                            background-size: cover;
+                            background-position: center;
+                            transform: rotate(182deg);
+        
+                        }
+                        h3{
+                            &:after{
+                                content: "";
+                                display: block; 
+                                width: 35px; 
+                                padding-top: 5px;
+                                border-bottom: 2px solid rgba(97, 208, 149, .95);
+                            }
+                        }
+                        .services-card-info{
+                            span{
+                                a{
+                                    color: darken($light-green, 30%);
+                                    text-decoration: none;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-of-type{
+                        .service-card-background{
+                            transform: rotate(65deg);
+                        }
+                    }
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        background: rgba(97, 208, 149, .45);
+                        padding: 5px;
+                        border-radius: 50%;
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                    }
+                    h3{
+                        font-size: vw(20);
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                        font-weight: 700;
+                        margin-bottom: vh(3);
+                        &:after{
+                            content: "";
+                            display: block; 
+                            width: 35px; 
+                            padding-top: 5px;
+                            border-bottom: 2px solid rgba(97, 208, 149, .95);
+                        }
+                    }
+                    .services-card-info{
+                        display: block;
+                        position: inherit;
+                        z-index: 3;
+                        span{
+                            font-size: vw(15);
+                            line-height: vh(21);
+                        }
+                    }
+                }
+            }
+            .services-logo-designer{
+                height: vh(150);
+                width: vw(150);
+                position: absolute;
+                bottom: vh(-100);
+                right: 0;
+            }
+            
+            .services-logo-developer{
+                height: vh(145);
+                width: vw(200);
+                position: absolute;
+                bottom: vh(-130);
+                left: vw(-25);
+                transform: scale(1.2);
+            }
+        }
+        .services-pricing{
+            margin-top: vh(185);
+        }
+    }
+}
+.highlight{
+    color: $lightBlue!important;
 }

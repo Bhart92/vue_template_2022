@@ -34,7 +34,7 @@ export default {
     methods: {
         scrollToTop(){
             const body = document.querySelector('body');
-            body.scrollTo(0,0);
+            window.scrollTo(0,0);
         }
     }
 }
