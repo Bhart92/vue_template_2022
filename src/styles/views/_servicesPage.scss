@@ -23,52 +23,41 @@
         justify-content: space-evenly;
         position: inherit;
         z-index: 2;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         h1{
             color: $white;
-            font-size: vw(34);
-            &:after{
-                content: "";
-                display: block; 
-                width: 35px; 
-                padding-top: 5px;
-                border-bottom: 2px solid $light-green;
-                
-            }   
+            font-size: vw(26);
+            padding: 0 vw(16);
         }
         .services-description{
             color: $white;
-            margin-top: vh(8);
+            margin-top: vh(10);
             display: flex;
             flex-direction: column;
-            line-height: vh(19.5);
             width: 100%;
+            padding: 0 vw(16);
             .services-description-span{
-                font-size: vw(17);
-                margin-bottom: vh(85);
+                font-size: vw(16);
+                line-height: vh(26);
+            }
+            
+            .sub-description{
+                @extend .services-description-span;
+                margin-top: vh(10);
+                
+                margin-bottom: vh(158);
             }
         }
         .services-seo{
             height: auto;
             h2{
-                text-align: right;
+                text-align: center;
                 color: $black;
                 font-size: vw(28);
                 opacity: .8;
                 position: relative;
                 line-height: vh(28);
-                &:after{
-                    content: "";
-                    display: block; 
-                    width: 35px; 
-                    margin: 0 auto;
-                    position: absolute;
-                    right: 0;
-                    padding-top: vh(5);
-                    border-bottom: 2px solid $light-green;
-                    
-                }   
             }
             .services-card-container{
                 width: 100%;
@@ -82,28 +71,27 @@
                 margin-top: vh(20);
                 .services-icon-image{
                     position: absolute;
-                    bottom: vh(48);
-                    right: vw(5);
-                    height: vh(115);
-                    width: vw(115);
-                    transform: scale(1.2);
+                    bottom: vh(-3);
+                    right: vw(-39);
+                    height: vh(240);
+                    width: vw(275);
                 }
-            .services-icon-wrapper{
-                margin: vh(10) 0;
-                display: flex;
+                .services-icon-wrapper{
+                    margin: vh(16) 0;
+                    display: flex;
 
-                img{
-                    height: vh(32);
-                    width: vw(32);
-                    margin-right: vw(5);
-                }
-                span{
-                    font-size: vw(17);
-                    line-height: vh(25);
-                    color: $black;
-                }
+                    img{
+                        height: vh(25);
+                        width: vw(25);
+                        margin-right: vw(5);
+                    }
+                    span{
+                        font-size: vw(17);
+                        line-height: vh(25);
+                        color: $black;
+                    }
 
-            }
+                }
                 .services-card{
                     position: relative;
                     height: vh(415, $design-height-mobile);
@@ -140,13 +128,6 @@
         
                         }
                         h3{
-                            &:after{
-                                content: "";
-                                display: block; 
-                                width: 35px; 
-                                padding-top: 5px;
-                                border-bottom: 2px solid rgba(97, 208, 149, .95);
-                            }
                         }
                         .services-card-info{
                             span{
@@ -182,13 +163,6 @@
                         z-index: 3;
                         font-weight: 700;
                         margin-bottom: vh(3);
-                        &:after{
-                            content: "";
-                            display: block; 
-                            width: 35px; 
-                            padding-top: 5px;
-                            border-bottom: 2px solid rgba(97, 208, 149, .95);
-                        }
                     }
                     .services-card-info{
                         display: block;
@@ -201,96 +175,88 @@
                     }
                 }
             }
-            
-    .services-module{
-        height: vh(200, $design-height-mobile);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: vh(50) vw(40) vh(10) vw(40);
-        color: $white;
-        letter-spacing: vw(1, $design-width-mobile);
-        position: relative;
-        z-index: 2;
-        &:last-of-type{
-            margin-top: vh(106);
-            height: auto;
-            align-self: flex-start;
-            color: $black;
+            .services-module{
+            height: vh(200, $design-height-mobile);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: vh(50) vw(40) vh(10) vw(40);
+            color: $white;
+            letter-spacing: vw(1, $design-width-mobile);
             position: relative;
             z-index: 2;
-            display: flex;
-            .background-container{
-                border-radius: 50%;
-                background: url('../assets/our-clients.svg');
-                background-position: top;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: vh(350);
-                width: 100%;
-                position: absolute;
-                top: vh(-25);
-                bottom: 0;
-                right: 0;
-                left: vw(-113);
-                z-index: 1;
-                opacity: .1;
-            }
-            h1{
-                margin-bottom: vh(10);
+            &:last-of-type{
+                margin-top: vh(106);
+                height: auto;
+                align-self: flex-start;
                 color: $black;
-                &:after{
-                    content: "";
-                    display: block; 
-                    width: 35px; 
-                    padding-top: 5px;
-                    border-bottom: 2px solid rgba(63, 156, 227, .95)
-                }
-            }
-            
-            .service-module-img{
-                height: vh(105);
-                width: vw(105);
-                position: relative;
-                top: vh(-10);
-                left: vw(-15);
-                display: block;
-                z-index: 1;
-                align-self: flex-end;
-            }
-            .services-module-sub{
-                display: block;
                 position: relative;
                 z-index: 2;
-                span{
-                    font-size: vw(15);
-                    font-weight: 500;
-                    line-height: vh(25);
+                display: flex;
+                .background-container{
+                    border-radius: 50%;
+                    background: url('../assets/our-clients.svg');
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: vh(350);
+                    width: 100%;
+                    position: absolute;
+                    top: vh(-25);
+                    bottom: 0;
+                    right: 0;
+                    left: vw(-113);
+                    z-index: 1;
+                    opacity: .1;
+                }
+                h1{
+                    margin-bottom: vh(10);
+                    color: $black;
+                }
+                
+                .service-module-img{
+                    height: vh(105);
+                    width: vw(105);
+                    position: relative;
+                    top: vh(-10);
+                    left: vw(-15);
+                    display: block;
+                    z-index: 1;
+                    align-self: flex-end;
+                }
+                .services-module-sub{
+                    display: block;
+                    position: relative;
+                    z-index: 2;
+                    span{
+                        font-size: vw(15);
+                        font-weight: 500;
+                        line-height: vh(25);
 
+                    }
                 }
             }
-        }
-        .background-container{
-            background: url('../assets/about-phone.svg');
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: contain;
-            transform: rotate(45deg);
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            z-index: 1;
-        }
-        h1{
-            font-size: vw(20, $design-width-mobile);
-            z-index: 2;
-            
-        }
-        }
+            .background-container{
+                background: url('../assets/about-phone.svg');
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: rotate(45deg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 1;
+            }
+            h1{
+                font-size: vw(20, $design-width-mobile);
+                z-index: 2;
+                
+            }
+            }
         }
         .services-logo{
             margin-top: vh(120);
@@ -318,22 +284,14 @@
                 opacity: .8;
                 position: relative;
                 line-height: vh(28);
-                margin-bottom: vh(15);
-                &:after{
-                    content: "";
-                    display: block; 
-                    width: 35px;
-                    padding-top: vh(5);
-                    border-bottom: 2px solid $light-green;
-                    
-                }   
+                margin-bottom: vh(15); 
             }
             .subHeader{
                 color: $black;
                 width: 80%;
                 margin: vh(10) auto;
                 font-size: vw(17);
-                line-height: vh(19.5);
+                line-height: vh(26);
 
             }
             .services-card-container{
@@ -354,7 +312,7 @@
                     width: vw(115);
                 }
             .services-icon-wrapper{
-                margin: vh(10) 0;
+                margin: vh(16) 0;
                 display: flex;  
                 // flex-direction: row-reverse;
                 img{
@@ -404,15 +362,6 @@
                             transform: rotate(182deg);
         
                         }
-                        h3{
-                            &:after{
-                                content: "";
-                                display: block; 
-                                width: 35px; 
-                                padding-top: 5px;
-                                border-bottom: 2px solid rgba(97, 208, 149, .95);
-                            }
-                        }
                         .services-card-info{
                             span{
                                 a{
@@ -447,13 +396,6 @@
                         z-index: 3;
                         font-weight: 700;
                         margin-bottom: vh(3);
-                        &:after{
-                            content: "";
-                            display: block; 
-                            width: 35px; 
-                            padding-top: 5px;
-                            border-bottom: 2px solid rgba(97, 208, 149, .95);
-                        }
                     }
                     .services-card-info{
                         display: block;
@@ -467,17 +409,16 @@
                 }
             }
             .services-logo-designer{
-                height: vh(150);
-                width: vw(150);
-                position: absolute;
-                bottom: vh(-100);
-                right: 0;
-                transform: scale(1.2);
+                position: relative;
+                top: vh(-85);
+                right: vw(-15);
+                height: vh(245);
+                width: vw(300);
                 z-index: 5;
             }
         }
         .services-updates{
-            margin-top: vh(200);
+            margin-top: vh(30);
             position: relative;
             display: flex;
             flex-direction: column;
@@ -490,14 +431,13 @@
                 background-size: cover;
                 height: vh(415);
                 position: absolute;
-                top: vh(-23);
+                top: vh(7);
                 bottom: 0;
                 right: vw(-60);
                 left: vw(-30);
                 z-index: 1;
                 opacity: .15;
             }
-            
             h2{
                 text-align: right;
                 color: $black;
@@ -505,17 +445,7 @@
                 opacity: .8;
                 position: relative;
                 line-height: vh(28);
-                margin-bottom: vh(15);
-                &:after{
-                    content: "";
-                    display: block; 
-                    width: 35px;
-                    position: absolute;
-                    right: 0;
-                    padding-top: vh(5);
-                    border-bottom: 2px solid $light-green;
-                    
-                }   
+                margin-bottom: vh(15);  
             }
             .subHeader{
                 color: $black;
@@ -523,7 +453,7 @@
                 width: 100%;
                 margin-bottom: vh(15);
                 font-size: vw(17);
-                line-height: vh(19.5);
+                line-height: vh(26);
 
             }
             .services-card-container{
@@ -542,22 +472,6 @@
                     height: vh(115);
                     width: vw(115);
                 }
-            .services-icon-wrapper{
-                margin: vh(10) 0;
-                display: flex;  
-                // flex-direction: row-reverse;
-                img{
-                    height: vh(32);
-                    width: vw(32);
-                    margin-right: vw(5);
-                }
-                span{
-                    font-size: vw(17);
-                    line-height: vh(25);
-                    color: $black;
-                }
-
-            }
                 .services-card{
                     position: relative;
                     height: vh(415, $design-height-mobile);
@@ -593,15 +507,6 @@
                             transform: rotate(182deg);
         
                         }
-                        h3{
-                            &:after{
-                                content: "";
-                                display: block; 
-                                width: 35px; 
-                                padding-top: 5px;
-                                border-bottom: 2px solid rgba(97, 208, 149, .95);
-                            }
-                        }
                         .services-card-info{
                             span{
                                 a{
@@ -636,13 +541,6 @@
                         z-index: 3;
                         font-weight: 700;
                         margin-bottom: vh(3);
-                        &:after{
-                            content: "";
-                            display: block; 
-                            width: 35px; 
-                            padding-top: 5px;
-                            border-bottom: 2px solid rgba(97, 208, 149, .95);
-                        }
                     }
                     .services-card-info{
                         display: block;
@@ -654,22 +552,13 @@
                         }
                     }
                 }
-            }
-            .services-logo-designer{
-                height: vh(150);
-                width: vw(150);
-                position: absolute;
-                bottom: vh(-100);
-                right: 0;
-            }
-            
+            }            
             .services-logo-developer{
-                height: vh(145);
-                width: vw(200);
+                height: vh(200);
+                width: vw(245);
                 position: absolute;
-                bottom: vh(-130);
+                bottom: vh(-175);
                 left: vw(-25);
-                transform: scale(1.2);
             }
         }
         .services-pricing{
@@ -678,5 +567,5 @@
     }
 }
 .highlight{
-    color: $lightBlue!important;
+    color: $blue!important;
 }

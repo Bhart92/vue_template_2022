@@ -27,14 +27,6 @@
         h1{
             color: $white;
             font-size: vw(26);
-            &:after{
-                content: "";
-                display: block; 
-                width: 35px; 
-                padding-top: 5px;
-                border-bottom: 2px solid $light-green;
-                
-            }   
         }
         span{
             margin-top: vh(5);
@@ -74,15 +66,7 @@
             font-size: vw(22, $design-width-mobile);
             z-index: 2;
             position: relative;
-            margin-bottom: vh(30);
-            &:after{
-                content: "";
-                display: block; 
-                width: 35px; 
-                padding-top: 2px;
-                border-bottom: 2px solid rgba(63, 156, 227, .95);
-                margin: 0 auto;
-            }            
+            margin-bottom: vh(30);       
         }
         .pricing-cost{
             height: vw(95);
@@ -110,32 +94,26 @@
                 font-weight: 400;
                 &:last-of-type{
                     font-size: vw(10);
-                    margin-bottom: vh(30);
+                    margin-bottom: vh(43);
                     margin-top: 0;
                 }
             }
             h4{
                 color: $white;
                 font-size: vw(20);
-                margin-bottom: vh(40);
-                &:after{
-                    content: "";
-                    display: block; 
-                    width: 35px; 
-                    padding-top: 5px;
-                    border-bottom: 2px solid rgba(63, 156, 227, .95);
-                    
-                }   
-
+                margin-bottom: vh(30);
             }
             h4.first-includes{
                 color: $white;
             }
             .pricing-includes-item{
-                margin: vh(50) auto;
+                margin: vh(60) auto;
                 display: flex;
                 &:first-of-type{
                     margin-top: 0;
+                }
+                &:last-of-type{
+                    margin-bottom: 0;
                 }
                 &.first-includes{
                     color: $white;
@@ -146,14 +124,6 @@
                 h5{
                     font-size: vw(20);
                     margin-bottom: vh(3);
-                    &:after{
-                        content: "";
-                        display: block; 
-                        width: 35px; 
-                        padding-top: 5px;
-                        border-bottom: 1px solid rgba(63, 156, 227, .95);
-                        margin-left: vw(2);
-                    }
                 }
                 span{
                 font-size: vw(16);
@@ -179,6 +149,15 @@
                 line-height: vh(25);
 
             }
+            
+        .pricing-module-image{
+            height: vh(223);
+            width: vw(289);
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: vh(40) auto;
+        }
         }
     }
 }

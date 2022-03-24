@@ -23,14 +23,16 @@
             <h1>We bring the big agency<br> 
             experience to small<br>
             businesses.</h1>
-            <img class="about-extra-image" src="../assets/about-extra.svg" alt="" />
+            <img class="about-extra-image" src="../assets/about-extra.png" alt="" />
             <div class="about-extra-desc">
                 <p>Our developers have experience<br>
                 working in some of the biggest<br>
-                agencies in the industry.<br>
-                We believe that <span class="highlight">every company<br>
-                should have access to quality web<br>
-                presence - regardless of their scale.</span><br><br>
+                industry agencies. We<br>
+                believe that <span class="highlight">every<br>
+                company should have<br>
+                access to quality web<br>
+                presence regardless<br>
+                of their scale.</span><br><br>
                 
                 Combining our <span class="highlight">real world industry experience</span><br>
                 and the idea that a quality web product<br>
@@ -54,6 +56,9 @@
 import MenuContainer from "../components/NavBar/MenuContainer";
 import FooterSection from "../components/footer/FooterSection";
 export default {
-    components: { MenuContainer, FooterSection }
+    components: { MenuContainer, FooterSection },
+    created(){
+        window.scrollTo(0,0);
+        }
 }
 </script>

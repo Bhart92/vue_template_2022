@@ -6,7 +6,7 @@
         <div class="services-info">
             <h6>{{title}}</h6>
             <span>{{subText}}</span>
-            <DefaultBtn :text="'Visit'"/>
+            <DefaultBtn />
         </div>
     </div>
 </template>

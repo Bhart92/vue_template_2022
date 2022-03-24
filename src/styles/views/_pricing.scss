@@ -1,7 +1,7 @@
 .pricing-container{
     width: 100%;
     height: auto;
-    margin-top: vh(250);
+    margin-top: vh(130);
     .pricing-module{
         height: auto;
         align-self: flex-end;
@@ -31,20 +31,10 @@
         }
         h1{
             text-align: right;
-            font-size: vw(22, $design-width-mobile);
+            font-size: vw(26, $design-width-mobile);
             z-index: 2;
             position: relative;
-            margin-bottom: vh(30);
-            &:after{
-                content: "";
-                display: block; 
-                width: 35px; 
-                position: absolute;
-                right: vw(5); 
-                padding-top: 2px;
-                border-bottom: 2px solid $light-green;
-                margin-top: vh(15);
-            }            
+            margin-bottom: vh(30);       
         }
         .pricing-cost{
             height: vw(95);
@@ -58,7 +48,7 @@
             z-index: 2;
             text-align: left;
             h2{
-                font-size: vw(26);
+                font-size: vw(24.5);
             }
             .pricing-sub-head{
                 margin-bottom: 0;
@@ -80,22 +70,14 @@
 
             }
             .pricing-includes-item{
-                margin: vh(50) auto;
+                margin: vh(40) auto;
                 display: flex;
                 &:first-of-type{
-                    margin-top: 0;
+                    margin-top: vh(25);
                 }
                 h5{
                     font-size: vw(20);
-                    margin-bottom: vh(3);
-                    &:after{
-                        content: "";
-                        display: block; 
-                        width: 35px; 
-                        padding-top: 5px;
-                        border-bottom: 1px solid rgba(63, 156, 227, .95);
-                        margin-left: vw(2);
-                    }  
+                    margin-bottom: vh(3);  
                 }
                 span{
                 font-size: vw(16);
@@ -108,6 +90,7 @@
                     align-self: flex-start;
                     margin-right: vw(15);
                     margin-left: vw(-15);
+                    margin-top: vh(5);
                     img{
                         height: 100%;
                         width: 100%;

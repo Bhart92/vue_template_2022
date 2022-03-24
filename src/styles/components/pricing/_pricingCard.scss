@@ -1,10 +1,16 @@
 .pricing-card{
-                border: 2px solid $lightBlue;
+                border: 2px solid $blue;
                 border-bottom: none;
                 height: auto;
                 position: relative;
-                margin: vh(30) auto;
+                margin: vh(55) auto;
                 color: $black;
+                &:first-of-type{
+                    margin-top: vh(25);
+                    &.pricing-page-card{
+                        margin-top: 0;
+                    }
+                }
                 .pricing-card-background{
                     background: url('../assets/cardBackground.svg');
                     background-position: center;
@@ -31,7 +37,7 @@
                     h5{
                         font-size: vw(42);
                         font-weight: 700;
-                        color: $lightBlue;
+                        color: $blue;
                         span{
                             font-size: vw(12);
                         }
@@ -41,7 +47,7 @@
                     z-index: 2;
                     h6{
                         font-size: vw(14);
-                        color: $lightBlue;
+                        color: $blue;
                     }
                     .pricing-card-info-wrap{
                         margin: vh(10) 0 vh(3) 0;
@@ -92,10 +98,10 @@
                 .pricing-card-title{
                     z-index: 2;
                     height: vh(45);
-                    border: 1px solid $lightBlue;
+                    border: 1px solid $blue;
                     width: 101%;
                     color: $white;
-                    background-color: $lightBlue;
+                    background-color: $blue;
                     h4{
                         font-size: vh(18);
                         letter-spacing: vw(2);

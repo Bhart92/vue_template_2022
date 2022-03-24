@@ -1,10 +1,10 @@
 <template>
-    <button>{{text}}</button>
+    <button>{{readMore ? 'Read More' : 'Visit'}}</button>
 </template>
 <script>
 export default {
     props: {
-        text: {type: String}
+        readMore: {type: Boolean, default: true}
     }
 }
 </script>

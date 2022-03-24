@@ -1,18 +1,19 @@
 
         .services-item-wrapper{
             width: 85%;
-            margin: vh(30) auto;
+            margin: vh(50) auto;
             background-color: #fff;
             border-bottom: none;
             box-shadow: 0 0 25px 5px rgb(0 0 0 / 5%);
             border-radius: 5px;
-            border-top: 5px solid $lightBlue;
+            border-top: 5px solid $blue;
             &:first-of-type{
-                margin-top: vh(10);
+                margin-top: vh(40);
 
             }
             &:nth-of-type(2){
                 .services-image{
+                    margin-top: vh(10);
                     img{
                         transform: scale(.9);
                     }
@@ -20,6 +21,7 @@
             }            
             &:last-of-type{
                 .services-image{
+                    margin-top: vh(20);
                     img{
                         transform: scale(.9);
                     }
@@ -50,27 +52,20 @@
 
                 h6{
                     font-size: vw(18);
-                    margin: vh(10) 0 vh(3) 0;
-                    &:after{
-                        content: "";
-                        display: block; 
-                        width: 35px; 
-                        padding-top: 2px;
-                        border-bottom: 2px solid $light-green;
-                        margin: vh(5) 0;
-                    }      
+                    margin: vh(10) 0 vh(10) 0;    
                 }
                 span{
-                    font-size: vw(14);
+                    font-size: vw(15);
+                    line-height: vh(20);
                 }
                 button{
-                    margin-top: vh(15);
+                    margin: vh(22) 0 vh(10) 0;
                     border: 2px solid $black;
                     color: $black;
                     background: transparent;
-                    padding: 8px 25px;
+                    padding: 10px 25px;
                     border-radius: 10px;
-                    max-width: vw(100);
+                    max-width: vw(120);
 
                 }
             }

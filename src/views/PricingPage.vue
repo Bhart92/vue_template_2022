@@ -13,7 +13,6 @@
           <h2>$0 Down, $150/Month!</h2>
           <h3>Three month minimum required*</h3>
           <h4>This includes:</h4>
-          
           <PricingIncludes :image="'infinite.png'" class="first-includes"
             :title="'Infinite edits'" :subText="'Our clients have unlimited website edits!'"/> 
 
@@ -26,10 +25,11 @@
           <PricingIncludes :image="'designer.png'"
             :title="'Logo designs'" :subText="`Need a logo? Our standard package includes a logo with 2 edits!`"/> 
 
+          <img class="pricing-module-image" src="../assets/pricing.png" />
       </div>
       <div class="pricing-card-container">
 
-        <PricingCard :price="150" :cardHeader="'All services listed above'"
+        <PricingCard class="pricing-page-card" :price="150" :cardHeader="'All services listed above'"
         :cardSubHeader="'Six month minimum'" :cardTitle="'Standard'"
         :cardList="
           {
@@ -137,6 +137,9 @@ import PricingCard from '../components/pricing/PricingCard';
 import FooterSection from "../components/footer/FooterSection";
 export default {
     
-  components: { PricingIncludes, PricingCard, MenuContainer, FooterSection }
+  components: { PricingIncludes, PricingCard, MenuContainer, FooterSection },
+  created(){
+    window.scrollTo(0,0);
+  }
 }
 </script>

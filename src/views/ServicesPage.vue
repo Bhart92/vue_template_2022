@@ -3,23 +3,24 @@
     <MenuContainer />
         <div class="main-background services-background" />
         <main>
-            <h1>What we do<br>different...</h1>
+            <h1>What we do different...</h1>
             <div class="services-description">
-                <span class="services-description-span">We build our products by hand with thought and intent. No website builders or wordpress. <span class="highlight">No bloated or unnecssary code.</span> Why is this better? Well, a hand coded website will almost always be leaner and more optimized
-                    than a wordpress, or drag and drop website builder. Often times this means hand coded websites <span class="highlight">outperform in SEO and load times.</span>
-                    <br><br>Hand coded websites also have <span class="highlight">unlimited flexbility</span> in their design and functionality. Page builders are bound by themes and templates for the average person.</span>
+                <span class="services-description-span">We build our products by hand. No website builders or wordpress. No bloated or unnecssary code. A hand coded website will almost always be leaner and more optimized
+                    than a wordpress, or drag and drop website builder. Often times this means hand coded websites outperform in SEO and load times.
+                </span>
+                <span class="sub-description">Hand coded websites also have unlimited flexbility in their design and functionality. Page builders are bound by themes and templates for the average person.</span>
                 
             <div class="services-seo">
-                <h2>How do we<br>optimize?...</h2>
+                <h2>How do we optimize?...</h2>
                 <div class="services-card-container">
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Meaningful content w/ keywords for SEO</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Semantically tagged and architected for web crawlers</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Designed with a Mobile-First approach</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Fully responsive to function across any device</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Custom Logos</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Logo Touchups</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Vector illustrations</span></div>
-                    <img class="services-icon-image" src="../assets/optimize.svg" alt="" />
+                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Meaningful content w/ keywords for SEO</span></div>
+                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Semantically tagged and architected for web crawlers</span></div>
+                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Designed with a Mobile-First approach</span></div>
+                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Fully responsive to rock-it across any device</span></div>
+                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Custom Logos</span></div>
+                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Logo Touchups</span></div>
+                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Vector illustrations</span></div>
+                    <img class="services-icon-image" src="../assets/growth.png" alt="" />
                 </div>
             </div>    
 
@@ -33,9 +34,8 @@
                     <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>One Logo with 3 edits</span></div>
                     <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Exported & optimized in all formats</span></div>
                     <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Starting at $350</span></div>
-                    
                 </div>
-                <img class="services-logo-designer" src="../assets/designer.svg" alt="" />
+                <img class="services-logo-designer" src="../assets/designer.png" alt="" />
             </div>
             
             <div class="services-updates">
@@ -53,7 +53,7 @@
                 <div class="services-card-container">
 
                 </div>
-                <img class="services-logo-developer" src="../assets/developer.svg" alt="" />
+                <img class="services-logo-developer" src="../assets/unlimited.png" alt="" />
             </div>
             <div class="services-pricing">        
                 <PricingCard :price="150" :cardHeader="'All services listed above'"
@@ -144,6 +144,10 @@ import PricingCard from '../components/pricing/PricingCard';
 
 import FooterSection from "../components/footer/FooterSection";
 export default {
-  components: { MenuContainer, PricingCard, FooterSection}
+  components: { MenuContainer, PricingCard, FooterSection},
+  created(){
+    window.scrollTo(0,0);
+  }
+    
 }
 </script>

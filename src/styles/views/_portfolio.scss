@@ -9,13 +9,13 @@
     height: auto;
     margin-bottom: vh(25);
     .portfolio-title{
+        margin-bottom: vh(35);
         h1{
-            font-size: vw(22);
+            font-size: vw(26);
             span{
-                color: $light-green;
+                color: $blue;
             }
         }
-        margin-bottom: vh(25);
     }
     .portfolio-module{
         display: flex;
@@ -23,16 +23,16 @@
         align-items: center;
         width: 100%;
         .portfolio-item-wrapper{
-            width: 101%;
-            margin: vh(30) 0;
+            width: 100%;
+            margin: vh(25) 0;
             border-bottom: none;
             box-shadow: 0 0 25px 5px rgb(0 0 0 / 5%);
             border-radius: 5px;
-            border-bottom: 5px solid $light-green;
+            border-bottom: 5px solid $blue;
             // border-bottom-right-radius: 0;
             // border-bottom-left-radius: 0;
             &:first-of-type{
-                margin-top: vh(10);
+                margin-top: 0;
             }
             .portfolio-image{
                 height: vh(200);
@@ -49,7 +49,7 @@
             .portfolio-info{
                 display: flex;
                 flex-direction: column;
-                padding: 0 0 vh(20) vw(15);
+                padding-right: vw(15);
                 width: 85%;
                 margin: 0 auto;
                 // border-top: 2px solid $black;
@@ -59,27 +59,25 @@
 
                 h6{
                     font-size: vw(18);
-                    margin: vh(10) 0 vh(3) 0;
-                    &:after{
-                        content: "";
-                        display: block; 
-                        width: 35px; 
-                        padding-top: 2px;
-                        border-bottom: 2px solid rgba(63, 156, 227, .5);
-                        margin-bottom: vh(5);
-                    }      
+                    margin: vh(10) 0 vh(3) 0;   
                 }
                 span{
                     font-size: vw(14);
                 }
                 button{
-                    margin-top: vh(15);
-                    border: 2px solid $black;
-                    color: $black;
+                    z-index: 2;
+                    padding: 8px 10px;
+                    outline: none;
+                    border: 2px solid #0D0908;
+                    opacity: 0.75;
                     background: transparent;
-                    padding: 8px 25px;
-                    border-radius: 10px;
-                    max-width: vw(100);
+                    border-radius: 25px;
+                    align-self: flex-start;
+                    font-weight: 700;
+                    color: #0D0908;
+                    font-size: vw(12);
+                    letter-spacing: vw(.85);
+                    margin: vh(15) 0 vh(25) 0;
 
                 }
             }

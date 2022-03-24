@@ -7,35 +7,7 @@
     padding: 0 vw(10, $design-width-mobile);
     position: relative;
     z-index: 3;
-    .divider{
-        height: 50px;
-        width: 50px;
-        position: relative;
-        margin: 0 auto;
-        top: -25px;
-        .bubble{
-            background: $lightBlue;
-            border-radius: 50%;
-            height: 35px;
-            width: 35px;
-            position: absolute;
-            top: -65px;
-            left: 0;
-            opacity: .5;
-            &:nth-of-type(3){
-                top: -10px;
-                left: 35px;
-            }
-            &:nth-of-type(2){
-                top: 18px;
-                left: 30px;
-            }
-            &:last-of-type{
-                top: 40px;
-                left: 15px;
-            }
-        }
-    }
+    height: vh(515);
     .about-module{
         height: auto;
         display: flex;
@@ -49,15 +21,7 @@
         color: $black;
         letter-spacing: vw(1, $design-width-mobile);
         h1{
-            font-size: vw(20, $design-width-mobile);
-            &:after{
-                content: "";
-                display: block; 
-                width: 35px; 
-                padding-top: 2px;
-                border-bottom: 2px solid rgba(63, 156, 227, .95);
-                margin-top: vh(15);
-            }  
+            font-size: vw(26, $design-width-mobile); 
         }
         .about-module-text{
             padding-top: vh(23);
@@ -71,10 +35,10 @@
                 line-height: vh(30, $design-height-mobile);
                 font-weight: 500;
                 .highlight{
-                    color: $lightBlue;
+                    color: $blue;
                 }
                 .about-module-link{
-                    color: $light-green;
+                    color: $blue;
                     text-decoration: none;
                 }
             }

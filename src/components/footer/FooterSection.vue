@@ -33,7 +33,6 @@ export default {
     name: 'FooterSection',
     methods: {
         scrollToTop(){
-            const body = document.querySelector('body');
             window.scrollTo(0,0);
         }
     }
