@@ -165,6 +165,13 @@
             margin: vh(40) auto;
         }
         }
+        .pricing-card-container{
+            .pricing-card{
+                &:last-of-type{
+                    margin-bottom: vh(17);
+                }
+            }
+        }
     }
 }
 }

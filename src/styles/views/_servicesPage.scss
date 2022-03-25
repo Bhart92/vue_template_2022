@@ -46,7 +46,7 @@
                 @extend .services-description-span;
                 margin-top: vh(10);
                 
-                margin-bottom: vh(158);
+                margin-bottom: vh(205);
             }
         }
         .services-seo{
@@ -259,7 +259,7 @@
             }
         }
         .services-logo{
-            margin-top: vh(120);
+            margin-top: vh(109);
             position: relative;                
             .background-container{
                 border-radius: 50%;
@@ -418,7 +418,7 @@
             }
         }
         .services-updates{
-            margin-top: vh(30);
+            margin-top: vh(24);
             position: relative;
             display: flex;
             flex-direction: column;
@@ -563,6 +563,11 @@
         }
         .services-pricing{
             margin-top: vh(185);
+            .pricing-card{
+                &:last-of-type{
+                    margin-bottom: vh(24);
+                }
+            }
         }
     }
 }

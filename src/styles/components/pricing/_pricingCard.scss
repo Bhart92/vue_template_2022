@@ -1,23 +1,23 @@
 .pricing-card{
-                border: 2px solid $blue;
-                border-bottom: none;
-                height: auto;
-                position: relative;
-                margin: vh(55) auto;
-                margin-bottom: 0;
-                color: $black;
-                &:first-of-type{
-                    margin-top: vh(25);
-                    &.pricing-page-card{
-                        margin-top: 0;
-                    }
-                }
-                .pricing-card-background{
-                    background: url('../assets/cardBackground.svg');
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    position: absolute;
+    border: 2px solid $blue;
+    border-bottom: none;
+    height: auto;
+    position: relative;
+    margin: vh(55) auto;
+    margin-bottom: 0;
+    color: $black;
+    &:first-of-type{
+      margin-top: vh(25);
+      &.pricing-page-card{
+            margin-top: 0;
+        }
+    }
+    .pricing-card-background{
+        background: url('../assets/cardBackground.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
                     bottom: 0;
                     top: 0;
                     left: 0;
@@ -25,7 +25,7 @@
                     display: block;
                     z-index: 1;
                     opacity: .15;
-                }
+    }
                 .pricing-card-cost{
                     z-index: 2;
                     margin-top: vh(15);
@@ -33,7 +33,7 @@
                         font-size: vw(14);
                         letter-spacing: vw(1.25);
                         font-weight: 700;
-                        margin-bottom: vh(23);
+                        margin-bottom: vh(0);
                     }
                     h5{
                         font-size: vw(42);
@@ -49,9 +49,15 @@
                     h6{
                         font-size: vw(14);
                         color: $blue;
+                        margin-bottom: vh(10);
+                    }
+                    .pricing-card-list-sub{
+                        margin: 0;
+                        margin-top: vh(-10);
+                        font-size: vh(11);
                     }
                     .pricing-card-info-wrap{
-                        margin: vh(10) 0 vh(3) 0;
+                        margin-bottom: vh(3);
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
@@ -60,7 +66,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: flex-start;
-                            margin: vh(15) 0 vh(5) 0;
+                            margin-top: vh(15);
                             width: vw(215);
                             max-width: vw(215);
                             min-width: vw(215);
@@ -82,7 +88,7 @@
                     }
                     button{
                         z-index: 2;
-                        margin: vh(15) 0 vh(25) 0;
+                        margin: vh(15) 0 vh(20) 0;
                         padding: 8px 10px;
                         outline: none;
                         border: 2px solid $black;

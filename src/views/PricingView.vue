@@ -1,6 +1,5 @@
 <template>
-  <section class="pricing-container">
-      
+  <section class="pricing-container">  
     <div class=" pricing-module">
       <div class="background-container" />
       <h1>How much<br>does this all cost?</h1>
@@ -10,24 +9,23 @@
           <h3>Three month minimum required*</h3>
           <h4>This includes:</h4>
           
-          <PricingIncludes :image="'check.svg'"
+          <PricingIncludes
             :title="'Infinite edits'" :subText="'Our clients have unlimited website edits!'"/> 
 
-          <PricingIncludes :image="'check.svg'"
+          <PricingIncludes
             :title="'Lifetime Optimization'" :subText="'Our subscription includes lifetime updates to SEO & accessibility.'"/> 
 
-          <PricingIncludes :image="'domain.png'"
+          <PricingIncludes
             :title="'Hosting fees built-in'" :subText="'We take the stress out of hosting so you can focus on business.'"/>
           
-          <PricingIncludes :image="'dev.png'"
+          <PricingIncludes
             :title="'Direct developer access'" :subText="'With direct access to your developer making changes to your website is as easy as 1, 2, 3.'"/>
           
-          <PricingIncludes :image="'designer.png'"
+          <PricingIncludes
             :title="'Logo designs'" :subText="`Need a logo? Our standard package includes a logo with 2 edits!`"/> 
 
       </div>
       <div class="pricing-card-container">
-
         <PricingCard :price="200" :cardHeader="'Integration with third party services'"
         :cardSubHeader="'Pricing depends on features requested*'" :cardTitle="'Features + Standard'"
         :cardList="
@@ -71,20 +69,19 @@
             {
               carditemOne: {
                 itemImg: require('../assets/calendar.svg'),
-                itemInfo: 'Appointment setting'
+                itemInfo: 'Logo w/ two edits'
               },
               carditemTwo: {
                 itemImg: require('../assets/phoneOrder.png'),
-                itemInfo: 'Order Placing'
+                itemInfo: 'Optimized & exported in all formats'
               },
               carditemThree: {
                 itemImg: require('../assets/custom.png'),
-                itemInfo: 'Custom features'
+                itemInfo: 'Free with every web package!'
               },
             }
           "
         />
-
       </div>
     </div>
   </section>

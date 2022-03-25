@@ -55,21 +55,18 @@
                 </div>
                 <img class="services-logo-developer" src="../assets/unlimited.png" alt="" />
             </div>
-            <div class="services-pricing">        
+            <div class="services-pricing">
                 <PricingCard :price="150" :cardHeader="'All services listed above'"
                 :cardSubHeader="'Six month minimum'" :cardTitle="'Standard'"
                 :cardList="
                 {
                     carditemOne: {
-                    itemImg: require('../assets/calendar.svg'),
-                    itemInfo: 'Infinite edits & changes'
+                    itemInfo: 'Infinite edits & design changes'
                     },
                     carditemThree: {
-                    itemImg: require('../assets/custom.png'),
                     itemInfo: 'Hosting fees built-in'
                     },
                     carditemFour: {
-                    itemImg: require('../assets/custom.png'),
                     itemInfo: 'Free Logo w/2 edits'
                     },
                 }"
@@ -79,15 +76,12 @@
                 :cardList="
                     {
                     carditemOne: {
-                        itemImg: require('../assets/calendar.svg'),
                         itemInfo: 'Appointment setting'
                     },
                     carditemTwo: {
-                        itemImg: require('../assets/phoneOrder.png'),
                         itemInfo: 'Order Placing'
                     },
                     carditemThree: {
-                        itemImg: require('../assets/custom.png'),
                         itemInfo: 'Custom features'
                     },
                     }
@@ -98,16 +92,13 @@
                 :cardList="
                     {
                     carditemOne: {
-                        itemImg: require('../assets/calendar.svg'),
-                        itemInfo: 'Appointment setting'
+                        itemInfo: 'Standard five page website'
                     },
                     carditemTwo: {
-                        itemImg: require('../assets/phoneOrder.png'),
-                        itemInfo: 'Order Placing'
+                        itemInfo: 'Logo w/ two edits'
                     },
                     carditemThree: {
-                        itemImg: require('../assets/custom.png'),
-                        itemInfo: 'Custom features'
+                        itemInfo: 'Google Business Profile, Analytics, and SEO included'
                     },
                     }
                 "
@@ -117,16 +108,29 @@
                 :cardList="
                     {
                     carditemOne: {
-                        itemImg: require('../assets/calendar.svg'),
-                        itemInfo: 'Appointment setting'
+                        itemInfo: 'Logo w/ two edits'
                     },
                     carditemTwo: {
-                        itemImg: require('../assets/phoneOrder.png'),
-                        itemInfo: 'Order Placing'
+                        itemInfo: 'Optimized & exported in all formats'
                     },
                     carditemThree: {
-                        itemImg: require('../assets/custom.png'),
-                        itemInfo: 'Custom features'
+                        itemInfo: 'Free with every web package!'
+                    },
+                    }
+                "
+                />
+                <PricingCard :price="100" :cardHeader="'One-time fee'" :isMonthly="false"
+                :cardSubHeader="'Pricing may vary depending on design*'" :cardTitle="'Logo Edits'"
+                :cardList="
+                    {
+                    carditemOne: {
+                        itemInfo: 'Logo cleanup'
+                    },
+                    carditemTwo: {
+                        itemInfo: 'Export & optimize formats'
+                    },
+                    carditemThree: {
+                        itemInfo: 'Color theme swaps'
                     },
                     }
                 "

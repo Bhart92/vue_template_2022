@@ -7,7 +7,7 @@
         </div>
         <div class="pricing-card-list flex-col-center">
             <h6>{{cardHeader}}</h6>
-            <span>{{cardSubHeader}}</span>
+            <span class="pricing-card-list-sub">{{cardSubHeader}}</span>
             <div class="pricing-card-info-wrap">
                 <div class="pricing-card-info" v-for = "(item, index) in cardList" v-bind:key="item[index]" >
                     <img src="../../assets/checkItem.svg"/>

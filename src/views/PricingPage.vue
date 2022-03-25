@@ -2,7 +2,6 @@
     <section class="pricing-page">
         <div class="main-background pricing-background" />
         <MenuContainer />
-        
     <main>
         <h1>How much does everything<br>cost?</h1>
              
@@ -13,16 +12,16 @@
           <h2>$0 Down, $150/Month!</h2>
           <h3>Three month minimum required*</h3>
           <h4>This includes:</h4>
-          <PricingIncludes :image="'infinite.png'"
+          <PricingIncludes
             :title="'Infinite edits'" :subText="'Our clients have unlimited website edits!'"/> 
 
-          <PricingIncludes :image="'domain.png'"
+          <PricingIncludes
             :title="'Hosting fees built-in'" :subText="'We take the stress out of hosting so you can focus on business.'"/>
           
-          <PricingIncludes :image="'dev.png'"
+          <PricingIncludes
             :title="'Direct developer access'" :subText="'With direct access to your developer making changes to your website is as easy as 1, 2, 3.'"/>
           
-          <PricingIncludes :image="'designer.png'"
+          <PricingIncludes
             :title="'Logo designs'" :subText="`Need a logo? Our standard package includes a logo with 2 edits!`"/> 
 
           <img class="pricing-module-image" src="../assets/pricing.png" />
@@ -34,15 +33,12 @@
         :cardList="
           {
             carditemOne: {
-              itemImg: require('../assets/calendar.svg'),
-              itemInfo: 'Infinite edits & changes'
+              itemInfo: 'Infinite edits & design changes'
             },
             carditemThree: {
-              itemImg: require('../assets/custom.png'),
               itemInfo: 'Hosting fees built-in'
             },
             carditemFour: {
-              itemImg: require('../assets/custom.png'),
               itemInfo: 'Free Logo w/2 edits'
             },
           }"
@@ -52,15 +48,12 @@
         :cardList="
             {
               carditemOne: {
-                itemImg: require('../assets/calendar.svg'),
                 itemInfo: 'Appointment setting'
               },
               carditemTwo: {
-                itemImg: require('../assets/phoneOrder.png'),
                 itemInfo: 'Order Placing'
               },
               carditemThree: {
-                itemImg: require('../assets/custom.png'),
                 itemInfo: 'Custom features'
               },
             }
@@ -71,16 +64,13 @@
         :cardList="
             {
               carditemOne: {
-                itemImg: require('../assets/calendar.svg'),
-                itemInfo: 'Appointment setting'
+                itemInfo: 'Standard five page website'
               },
               carditemTwo: {
-                itemImg: require('../assets/phoneOrder.png'),
-                itemInfo: 'Order Placing'
+                itemInfo: 'Logo w/ two edits'
               },
               carditemThree: {
-                itemImg: require('../assets/custom.png'),
-                itemInfo: 'Custom features'
+                itemInfo: 'Google Business Profile, Analytics, and SEO included'
               },
             }
           "
@@ -90,16 +80,13 @@
         :cardList="
             {
               carditemOne: {
-                itemImg: require('../assets/calendar.svg'),
-                itemInfo: 'Appointment setting'
+                itemInfo: 'Logo w/ two edits'
               },
               carditemTwo: {
-                itemImg: require('../assets/phoneOrder.png'),
-                itemInfo: 'Order Placing'
+                itemInfo: 'Optimized & exported in all formats'
               },
               carditemThree: {
-                itemImg: require('../assets/custom.png'),
-                itemInfo: 'Custom features'
+                itemInfo: 'Free with every web package!'
               },
             }
           "
@@ -109,16 +96,13 @@
         :cardList="
             {
               carditemOne: {
-                itemImg: require('../assets/calendar.svg'),
-                itemInfo: 'Appointment setting'
+                itemInfo: 'Logo cleanup'
               },
               carditemTwo: {
-                itemImg: require('../assets/phoneOrder.png'),
-                itemInfo: 'Order Placing'
+                itemInfo: 'Export & optimize formats'
               },
               carditemThree: {
-                itemImg: require('../assets/custom.png'),
-                itemInfo: 'Custom features'
+                itemInfo: 'Color theme swaps'
               },
             }
           "
