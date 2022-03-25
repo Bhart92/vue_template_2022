@@ -14,27 +14,6 @@
         background-size: cover;
         
     }
-    .footer-logo{
-        position: relative;
-        top: vw(-20);
-        display: block;
-        z-index: 2;
-        height: vh(100);
-        display: flex;
-        align-items: flex-end;
-        width: 80%;
-        img{   
-            width: vw(60, $design-width-mobile);
-            height: vh(60, $design-height-mobile)
-        }
-        span{
-            color: $white;
-            color: $white;
-            font-size: vw(32, $design-width-mobile);
-            font-weight: 700;
-            padding-bottom: vh(7, $design-height-mobile);
-        }
-    }
     .footer-info-container{
         position: relative;
         display: block;
@@ -42,6 +21,27 @@
         color: $white;
         width: 80%;
         font-size: vw(16);
+        .footer-logo{
+            position: relative;
+            display: block;
+            z-index: 2;
+            height: vh(88);
+            width: vw(127);
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: vh(5);
+            img{   
+                width: 100%;
+                height: 100%;
+            }
+            span{
+                color: $white;
+                color: $white;
+                font-size: vw(32, $design-width-mobile);
+                font-weight: 700;
+                padding-bottom: vh(7, $design-height-mobile);
+            }
+        }
         .footer-contact{
             margin-bottom: vh(15);
             h6{

@@ -7,7 +7,7 @@
     padding: 0 vw(10, $design-width-mobile);
     position: relative;
     z-index: 3;
-    height: vh(515);
+    height: vh(492);
     .about-module{
         height: auto;
         display: flex;
@@ -17,7 +17,7 @@
         // background-position: center;
         // background-size: cover;
         // background-repeat: no-repeat;
-        padding: 10px 25px;
+        padding: 0 25px 10px 25px;
         color: $black;
         letter-spacing: vw(1, $design-width-mobile);
         h1{

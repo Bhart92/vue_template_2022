@@ -13,7 +13,7 @@
           <h2>$0 Down, $150/Month!</h2>
           <h3>Three month minimum required*</h3>
           <h4>This includes:</h4>
-          <PricingIncludes :image="'infinite.png'" class="first-includes"
+          <PricingIncludes :image="'infinite.png'"
             :title="'Infinite edits'" :subText="'Our clients have unlimited website edits!'"/> 
 
           <PricingIncludes :image="'domain.png'"

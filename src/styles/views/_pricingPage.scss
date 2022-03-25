@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: vh(150);
+    padding-top: vh(100);
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
@@ -94,32 +94,38 @@
                 font-weight: 400;
                 &:last-of-type{
                     font-size: vw(10);
-                    margin-bottom: vh(43);
+                    margin-bottom: vh(8);
                     margin-top: 0;
                 }
             }
             h4{
                 color: $white;
                 font-size: vw(20);
-                margin-bottom: vh(30);
+                margin-top: vh(15);
             }
             h4.first-includes{
                 color: $white;
             }
             .pricing-includes-item{
-                margin: vh(60) auto;
+                margin: vh(25) auto;
                 display: flex;
                 &:first-of-type{
-                    margin-top: 0;
-                }
-                &:last-of-type{
+                    margin-top: vh(15);
                     margin-bottom: 0;
-                }
-                &.first-includes{
                     color: $white;
                     span{
                         color: $white;
                     }
+                }
+                &:nth-of-type(2){
+                    color: $white;
+                    margin-bottom: vh(50);
+                    span{
+                        color: $white;
+                    }
+                }
+                &:last-of-type{
+                    margin-bottom: 0;
                 }
                 h5{
                     font-size: vw(20);

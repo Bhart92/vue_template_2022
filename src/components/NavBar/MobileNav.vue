@@ -11,13 +11,9 @@
 <script>
 window.__forceSmoothScrollPolyfill__ = true;
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 export default {
     mounted()
     {
-        // this.generateLinkArray()
     },        
     methods:
     {
@@ -26,8 +22,6 @@ export default {
         const BurgerMenuLineArray = Array.from(document.querySelectorAll('.line'));
         const body = document.querySelector('body')
         const burgerMenu = document.querySelector('.ham');
-        console.log(burgerMenu)
-        console.log('fired')
 
         body.classList.toggle('overflow-toggle');
         burgerMenu.classList.toggle('active')
@@ -39,14 +33,6 @@ export default {
             
             const body = document.querySelector("body");
             
-    //   body.classList.toggle('overflow-toggle');
-            // Grab link associated with section
-            const link = document.querySelector(`.${target}`);
-
-            // Pull href attribute
-            const href = link.getAttribute("href");
-            // Find the top of the section
-            const offsetTop = document.querySelector(`${href}`).offsetTop + 15;
             // scroll to top of section
             window.scroll({
                 top: body,

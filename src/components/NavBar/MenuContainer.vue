@@ -1,7 +1,7 @@
 <template>
     <div class="menu-container">
       <div class="nav-image">
-        <span>909</span><img class="nav-logo" src="../../assets/nav-logo.png" alt="a logo" />
+        <img class="nav-logo" src="../../assets/nav-logo.svg" alt="a logo" />
         </div>
        <svg @click="toggleNav" class="ham ham3" viewBox="0 0 100 100" width="80">
         <path

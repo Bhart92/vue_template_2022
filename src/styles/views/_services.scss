@@ -12,12 +12,13 @@
         flex-direction: column;
         justify-content: center;
         padding: vh(5) vw(35);
+        padding-top: 0;
         color: $black;
         letter-spacing: vw(1, $design-width-mobile);
         position: relative;
         z-index: 2;
         &:last-of-type{
-            margin-top: vh(100);
+            margin-top: vh(123);
             height: auto;
             align-self: flex-start;
             color: $black;

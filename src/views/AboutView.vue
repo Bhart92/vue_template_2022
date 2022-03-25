@@ -1,12 +1,5 @@
 <template>
   <section class="about-container">
-  <!-- <div class="divider">
-    <div class="bubble"/>
-    <div class="bubble"/>
-    <div class="bubble"/>
-    <div class="bubble"/>
-  </div> -->
-
    <div class=" about-module">
     <h1>A bit about us...</h1>
    </div>

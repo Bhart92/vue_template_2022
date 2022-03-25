@@ -1,5 +1,6 @@
 <template>
-  <section class="landing-container main-background" id="landing-container">
+  <section class="landing-container" id="landing-container">
+    <div class="landing-background main-background" />
     <MenuContainer />
     <div class="landing-hero">
       <h1>Web Development<br>+ Design</h1>
