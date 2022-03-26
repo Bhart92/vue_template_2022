@@ -18,15 +18,19 @@ export default {
     methods:
     {
         toggleNav:function(){
-        const nav = document.querySelector('.nav-mobile');
-        const BurgerMenuLineArray = Array.from(document.querySelectorAll('.line'));
-        const body = document.querySelector('body')
-        const burgerMenu = document.querySelector('.ham');
+            const nav = document.querySelector('.nav-mobile');
+            const overlay = document.querySelector('.overlay');
+            const BurgerMenuLineArray = Array.from(document.querySelectorAll('.line'));
+            const htmlTag = document.querySelector('html')
+            const section = document.querySelector('section');
+            const burgerMenu = document.querySelector('.ham');
 
-        body.classList.toggle('overflow-toggle');
-        burgerMenu.classList.toggle('active')
-        BurgerMenuLineArray.forEach((btn => btn.classList.toggle('nav-active')));
-        nav.classList.toggle('nav-active');
+            htmlTag.classList.toggle('overflow-toggle');
+            section.classList.toggle('overflow-toggle');
+            overlay.classList.toggle('display-toggle');
+            burgerMenu.classList.toggle('active')
+            BurgerMenuLineArray.forEach((btn => btn.classList.toggle('nav-active')));
+            nav.classList.toggle('nav-active');
         },
         // Controls section scrolling
         sectionScroller: function(target) {
