@@ -47,13 +47,18 @@
             align-items: flex-end;
             position: relative;
             left: vw(20);
-            @include ipad{      
+            @include ipad{  
                 padding-top: vh(15, $design-height-mobile);
+                padding-left: 0;
+                width: vw(75);
             }
-                .nav-logo{
-                        height: 100%;
-                        width: 100%;
-                        transform: scale(1.5);
+            .nav-logo{
+                height: 100%;
+                width: 100%;
+                transform: scale(1.5);
+                @include ipad{  
+                transform: unset;
+                }
                 }
         }
         .ham {
@@ -66,7 +71,7 @@
                 user-select: none;
                 @include ipad {
                         transform: scale(1.5);
-                        padding-right: vw(5);
+                        padding-right: vw(15);
                 }
         }
         .hamRotate.active {

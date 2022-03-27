@@ -26,17 +26,25 @@
             margin-bottom: vh(10, $design-height-mobile);
             @include ipad {
                 margin-bottom: vh(20);
+                font-size: vw(20, $design-width-mobile);
             }
         }
         h2{
             font-size: vw(14, $design-width-mobile);
             margin-bottom: vh(20, $design-height-mobile);
+            @include ipad {
+                font-size: vw(10, $design-width-mobile);
+            }
         }
         .landing-btn{
-            font-size: vw(16, $design-width-mobile);
+            font-size: vw(14, $design-width-mobile);
             background: transparent;
             border: 2px solid $white;
             color: $white;
+            @include ipad {
+                font-size: vw(8.5, $design-width-mobile);
+                max-width: 150px;
+            }
 
         }
     }
@@ -51,7 +59,8 @@
             bottom: vh(-20);
         }
         @include ipad {
-            transform: scale(1.75);
+            transform: scale(1.35);
+            bottom: vh(65, $design-height-mobile);
         }
     }
 }
