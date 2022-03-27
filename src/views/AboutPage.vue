@@ -2,8 +2,7 @@
 <section class="about-page">
     <div class="background-container main-background" />
     <MenuContainer/>
-    <main>
-        
+    <main>  
         <h1>A bit about us...</h1>
         <div class="about-description">
             <p>909 Web Studios is a family owned and operated<br>
@@ -48,9 +47,8 @@
         </div>
     </main>
     <img class="about-bottom-graphic" src="../assets/about-page-icon.png" alt="" />
-
-</section>
     <FooterSection />
+</section>
 </template>
 <script>
 import MenuContainer from "../components/NavBar/MenuContainer";
@@ -59,6 +57,6 @@ export default {
     components: { MenuContainer, FooterSection },
     created(){
         window.scrollTo(0,0);
-        }
+    }
 }
 </script>

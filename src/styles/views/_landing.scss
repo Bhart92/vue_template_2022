@@ -24,6 +24,9 @@
         h1{
             font-weight: 700;
             margin-bottom: vh(10, $design-height-mobile);
+            @include ipad {
+                margin-bottom: vh(20);
+            }
         }
         h2{
             font-size: vw(14, $design-width-mobile);
@@ -44,5 +47,11 @@
         max-width: 405px;
         position: absolute;
         bottom: vh(25, $design-height-mobile);
+        @include small-phones{            
+            bottom: vh(-20);
+        }
+        @include ipad {
+            transform: scale(1.75);
+        }
     }
 }

@@ -43,13 +43,16 @@
             position: absolute;
             height: vh(225);
             width: vw(325);
-            // bottom: 20px;
-            // right: 35px;
             top: vh(157);
             right: vw(-61);
             display: block;
             z-index: 1;
             border-radius: 35%;
+            @include ipad {
+                width: vw(265);
+                height: vh(205);
+                right: vw(-20);
+            }
         }
     }
 }

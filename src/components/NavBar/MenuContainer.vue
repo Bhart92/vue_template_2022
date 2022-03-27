@@ -17,24 +17,12 @@
     </div>
 </template>
 <script>
+import { toggleNav } from '../../js/NavFunctions';
+
 export default {
     
   methods: {
-    toggleNav(){
-      const nav = document.querySelector('.nav-mobile');
-      const overlay = document.querySelector('.overlay');
-      const BurgerMenuLineArray = Array.from(document.querySelectorAll('.line'));
-      const htmlTag = document.querySelector('html')
-      const section = document.querySelector('section');
-      const burgerMenu = document.querySelector('.ham');
-
-      htmlTag.classList.toggle('overflow-toggle');
-      section.classList.toggle('overflow-toggle');
-      overlay.classList.add('display-toggle');
-      burgerMenu.classList.toggle('active')
-      BurgerMenuLineArray.forEach((btn => btn.classList.toggle('nav-active')));
-      nav.classList.toggle('nav-active');
-    }
+    toggleNav
   }
 }
 </script>

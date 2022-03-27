@@ -92,6 +92,11 @@
                     margin-right: vw(15);
                     margin-left: vw(-15);
                     margin-top: vh(5);
+                    @include ipad {
+                        margin-left: 0;
+                        min-height: 50px;
+                        min-width: 50px;
+                    }
                     img{
                         height: 100%;
                         width: 100%;

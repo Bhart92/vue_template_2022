@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import { toggleNav } from "./js/NavFunctions";
 import "./styles/styles.scss";
 // Required for smooth scroll in Safari
 window.requestAnimationFrame(smoothscroll.polyfill);
@@ -10,6 +11,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
     createApp(App).use(store).use(router).mount("#app");
+
     const setVDimensions = function()
     {
         // First we get the viewport height and we multiple it by 1% to get a value for a vh unit

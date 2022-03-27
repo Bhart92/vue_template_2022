@@ -92,5 +92,8 @@
     .services-img-btm{
         transform: scale(1.5);
         margin-top: 45px;
+        @include ipad {
+            transform: scale(1.25);
+        }
     }
 }

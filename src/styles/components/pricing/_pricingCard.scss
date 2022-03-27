@@ -100,6 +100,10 @@
                         color: $black;
                         font-size: vw(12);
                         letter-spacing: vw(.85);
+                        @include ipad {
+                            padding: 12px 20px;
+                            transform: scale(1);
+                        }
                     }
                 }
                 .pricing-card-title{

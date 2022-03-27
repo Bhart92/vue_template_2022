@@ -1,9 +1,8 @@
-$tablet: 650px;
-$tablet-sm: 650px;
+$tablet: 768px;
+$tablet-sm: 850px;
 $phone-lg: 440px;
 $phone-md: 380px;
 $phone-sm: 330px;
-
 $tablet-landscape: 1050px;
 $phone-lg-landscape: 850px;
 $phone-md-landscape: 700px;
@@ -53,15 +52,100 @@ $design-height-desktop: 800;
 	@content;
   }
 }
-
-@mixin iphone-x($minWidth : 375px, $minHeight : 812px )
+@mixin main-phone-break($maxWidth : 650px)
 {
-  @media only screen and (device-width: #{$minWidth}) and (device-height: #{$minHeight}) and (orientation: portrait)
+  @media only screen and (max-width: #{$maxWidth})
   {
 	@content;
   }
 }
-
+@mixin small-phones($maxWidth : 325px)
+{
+  @media only screen and (max-width: #{$maxWidth})
+  {
+	@content;
+  }
+}
+/* iphone 6+, 6s+, 7+, 8+ */
+@mixin iphone-6-plus($minWidth : 414px, $maxHeight : 736px, $pixelRatio: 3 )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-height: #{$maxHeight}) and (-webkit-device-pixel-ratio: #{$pixelRatio})
+  {
+	@content;
+  }
+}
+/* iphone X , XS, 11 Pro, 12 Mini */
+@mixin iphone-x($minWidth : 375px, $maxHeight : 812px, $pixelRatio: 3 )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-height: #{$maxHeight}) and (-webkit-device-pixel-ratio: #{$pixelRatio})
+  {
+	@content;
+  }
+}
+/* iphone 12, 12 Pro */
+@mixin iphone-12($minWidth : 390px, $maxHeight : 844px, $pixelRatio: 3 )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-height: #{$maxHeight}) and (-webkit-device-pixel-ratio: #{$pixelRatio})
+  {
+	@content;
+  }
+}
+/* iphone XR, 11 */
+@mixin iphone-xr($minWidth : 414px, $maxHeight : 896px, $pixelRatio: 2 )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-height: #{$maxHeight}) and (-webkit-device-pixel-ratio: #{$pixelRatio})
+  {
+	@content;
+  }
+}
+/* iphone XS Max, 11 Pro Max */
+@mixin iphone-11($minWidth : 414px, $maxHeight : 896px, $pixelRatio: 3 )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-height: #{$maxHeight}) and (-webkit-device-pixel-ratio: #{$pixelRatio})
+  {
+	@content;
+  }
+}
+/* iphone 12 Pro Max */
+@mixin iphone-12-pro($minWidth : 428px, $maxHeight : 926px, $pixelRatio: 3 )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-height: #{$maxHeight}) and (-webkit-device-pixel-ratio: #{$pixelRatio})
+  {
+	@content;
+  }
+}
+/* ipad mini */
+@mixin ipad-mini($minWidth : 768px, $maxWidth: 1024px, $pixelRatio: 1, $orientation: portrait )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-width: #{$maxWidth}) and (-webkit-min-device-pixel-ratio: #{$pixelRatio}) and (orientation: #{$orientation})
+  {
+	@content;
+  }
+}
+/* ipad 9.7*/
+@mixin ipad($minWidth : 768px, $maxWidth: 1024px, $pixelRatio: 2, $orientation: portrait )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-width: #{$maxWidth}) and (-webkit-min-device-pixel-ratio: #{$pixelRatio}) and (orientation: #{$orientation})
+  {
+	@content;
+  }
+}
+/* ipad pro 10.5*/
+@mixin ipad-pro-ten($minWidth : 834px, $maxWidth: 1112px, $pixelRatio: 2, $orientation: portrait )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-width: #{$maxWidth}) and (-webkit-min-device-pixel-ratio: #{$pixelRatio}) and (orientation: #{$orientation})
+  {
+	@content;
+  }
+}
+/* ipad pro 12.9*/
+@mixin ipad-pro($minWidth : 1024px, $maxWidth: 1024px, $pixelRatio: 2, $orientation: portrait )
+{
+  @media only screen and (min-width: #{$minWidth}) and (max-width: #{$maxWidth}) and (-webkit-min-device-pixel-ratio: #{$pixelRatio}) and (orientation: #{$orientation})
+  {
+	@content;
+  }
+}
 @mixin box-sizing()
 {
   &, *

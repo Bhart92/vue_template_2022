@@ -10,39 +10,12 @@
 </template>
 <script>
 window.__forceSmoothScrollPolyfill__ = true;
+import {toggleNav} from '../../js/NavFunctions';
 
 export default {
-    mounted()
-    {
-    },        
     methods:
     {
-        toggleNav:function(){
-            const nav = document.querySelector('.nav-mobile');
-            const overlay = document.querySelector('.overlay');
-            const BurgerMenuLineArray = Array.from(document.querySelectorAll('.line'));
-            const htmlTag = document.querySelector('html')
-            const section = document.querySelector('section');
-            const burgerMenu = document.querySelector('.ham');
-
-            htmlTag.classList.toggle('overflow-toggle');
-            section.classList.toggle('overflow-toggle');
-            overlay.classList.toggle('display-toggle');
-            burgerMenu.classList.toggle('active')
-            BurgerMenuLineArray.forEach((btn => btn.classList.toggle('nav-active')));
-            nav.classList.toggle('nav-active');
-        },
-        // Controls section scrolling
-        sectionScroller: function(target) {
-            
-            const body = document.querySelector("body");
-            
-            // scroll to top of section
-            window.scroll({
-                top: body,
-                behavior: 'smooth'
-                });
-        }
+        toggleNav,
     }
 }
 </script>

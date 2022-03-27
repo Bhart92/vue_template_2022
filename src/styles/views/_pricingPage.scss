@@ -101,25 +101,56 @@
             h4{
                 color: $white;
                 font-size: vw(20);
-                margin-top: vh(15);
+                margin-top: vh(20);
+                @include main-phone-break {    
+                    margin-top: vh(10);
+                }
+                @include iphone-x {    
+                    margin-top: vh(20);
+                }
+                @include iphone-xr{
+                    margin-top: vh(25);
+                }
+                @include iphone-12 {    
+                    margin-top: vh(20);
+                }
             }
             h4.first-includes{
                 color: $white;
             }
             .pricing-includes-item{
-                margin: vh(25) auto;
+                margin: vh(20) auto;
                 display: flex;
                 &:first-of-type{
-                    margin-top: vh(15);
+                    margin-top: vh(20);
                     margin-bottom: 0;
                     color: $white;
+                    @include iphone-xr{
+                        margin-top: vh(25);
+                    }
+                    
+                    @include iphone-6-plus{
+                        margin-top: vh(10);
+                    }
                     span{
                         color: $white;
                     }
                 }
                 &:nth-of-type(2){
                     color: $white;
-                    margin-bottom: vh(50);
+                    margin-bottom: vh(80);
+                    @include main-phone-break {
+                        margin-bottom: vh(105);
+                    }
+                    @include iphone-x{
+                        margin-bottom: vh(110);
+                    }
+                    @include iphone-12{
+                        margin-bottom: vh(105);
+                    }
+                    @include iphone-xr{
+                        margin-bottom: vh(105);
+                    }
                     span{
                         color: $white;
                     }
@@ -173,5 +204,5 @@
             }
         }
     }
-}
+    }
 }
