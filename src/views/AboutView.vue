@@ -14,10 +14,9 @@
             fit their needs.<br><br>
             <router-link to="/about" class="about-module-link">Click here<br>to learn more...</router-link>
       </span>
+      
+    <img class="about-module-img" src="../assets/collab.png" alt="A happy looking face" />
     </div>
-    
-      <img class="about-module-img" src="../assets/collab.png" alt="A happy looking face" />
    </div>
-
   </section>
 </template>

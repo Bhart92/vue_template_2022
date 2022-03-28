@@ -26,14 +26,14 @@
             margin-bottom: vh(10, $design-height-mobile);
             @include ipad {
                 margin-bottom: vh(20);
-                font-size: vw(20, $design-width-mobile);
+                font-size: vh(20);
             }
         }
         h2{
             font-size: vw(14, $design-width-mobile);
             margin-bottom: vh(20, $design-height-mobile);
             @include ipad {
-                font-size: vw(10, $design-width-mobile);
+                font-size: vh(15);
             }
         }
         .landing-btn{
@@ -41,8 +41,9 @@
             background: transparent;
             border: 2px solid $white;
             color: $white;
+            letter-spacing: vw(1);
             @include ipad {
-                font-size: vw(8.5, $design-width-mobile);
+                font-size: vh(12);
                 max-width: 150px;
             }
 

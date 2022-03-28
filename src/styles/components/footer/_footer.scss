@@ -21,6 +21,9 @@
         color: $white;
         width: 80%;
         font-size: vw(16);
+        @include ipad {
+            font-size: vh(15.5);
+        }
         .footer-logo{
             position: relative;
             display: block;

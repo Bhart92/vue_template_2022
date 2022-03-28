@@ -60,7 +60,9 @@
                     font-size: vw(15);
                     font-weight: 500;
                     line-height: vh(25);
-
+                    @include ipad { 
+                        font-size: vh(14);
+                    }
                 }
             }
             h1{  
@@ -87,13 +89,16 @@
             font-size: vw(26, $design-width-mobile);
             z-index: 2;
             position: relative;
+            @include ipad {
+                font-size: vh(19);              
+            }
         }
     }
     .services-img-btm{
         transform: scale(1.5);
         margin-top: 45px;
         @include ipad {
-            transform: scale(1.25);
+            transform: scale(1.1);
         }
     }
 }

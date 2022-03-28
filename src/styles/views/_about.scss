@@ -8,16 +8,26 @@
     position: relative;
     z-index: 3;
     height: vh(492);
+    @include ipad {
+        align-items: center;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .about-module{
         height: auto;
         display: flex;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         padding: 0 25px 10px 25px;
         color: $black;
         letter-spacing: vw(1, $design-width-mobile);
         h1{
-            font-size: vw(26, $design-width-mobile); 
+            font-size: vw(26, $design-width-mobile);
+            @include ipad {
+                font-size: vh(19);              
+            }
         }
         .about-module-text{
             padding-top: vh(23);
@@ -30,6 +40,9 @@
                 font-size: vw(16, $design-width-mobile);
                 line-height: vh(30, $design-height-mobile);
                 font-weight: 500;
+                @include ipad {
+                    font-size: vh(14);              
+                }
                 .highlight{
                     color: $blue;
                 }
@@ -43,14 +56,14 @@
             position: absolute;
             height: vh(225);
             width: vw(325);
-            top: vh(157);
-            right: vw(-61);
+            bottom: 0;
+            right: 0;
             display: block;
             z-index: 1;
             border-radius: 35%;
             @include ipad {
-                width: vw(265);
-                height: vh(205);
+                width: vw(245);
+                height: vh(200);
                 right: vw(-20);
             }
         }

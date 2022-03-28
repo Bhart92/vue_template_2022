@@ -8,6 +8,9 @@
     margin: 0 auto;
     height: auto;
     margin-bottom: vh(25);
+    @include ipad {
+        width: 80%;
+    }
     .portfolio-title{
         margin-bottom: vh(35);
         h1{

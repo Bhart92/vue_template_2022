@@ -35,7 +35,10 @@
             font-size: vw(26, $design-width-mobile);
             z-index: 2;
             position: relative;
-            margin-bottom: vh(30);       
+            margin-bottom: vh(30);
+            @include ipad {
+                font-size: vh(19);
+            }
         }
         .pricing-cost{
             height: vw(95);
@@ -50,6 +53,10 @@
             text-align: left;
             h2{
                 font-size: vw(24.5);
+                @include ipad {
+                    font-size: vh(19);
+                    text-align: center;
+                }
             }
             .pricing-sub-head{
                 margin-bottom: 0;
@@ -69,6 +76,9 @@
                 font-size: vw(20);
                 margin-bottom: vh(20);
 
+                @include ipad {
+                    font-size: vh(19);
+                }
             }
             .pricing-includes-item{
                 margin: vh(40) auto;
@@ -78,10 +88,16 @@
                 }
                 h5{
                     font-size: vw(20);
-                    margin-bottom: vh(3);  
+                    margin-bottom: vh(3);
+                    @include ipad {
+                        font-size: vh(19);
+                    }
                 }
                 span{
                 font-size: vw(16);
+                @include ipad {
+                    font-size: vh(19);
+                }
                 }
                 .pricing-item-img{
                     height: vh(25);
@@ -94,8 +110,8 @@
                     margin-top: vh(5);
                     @include ipad {
                         margin-left: 0;
-                        min-height: 50px;
-                        min-width: 50px;
+                        min-height: 40px;
+                        min-width: 40px;
                     }
                     img{
                         height: 100%;
