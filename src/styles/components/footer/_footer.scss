@@ -49,6 +49,9 @@
             margin-bottom: vh(15);
             h6{
                 font-size: vw(18);
+                @include ipad {
+                    font-size: vh(19);
+                }
                 &:after{
                     content: "";
                     display: block; 
@@ -66,6 +69,9 @@
             margin-bottom: vh(15);
             h6{
                 font-size: vw(18);
+                @include ipad {
+                    font-size: vh(19);
+                }
                 &:after{
                     content: "";
                     display: block; 
@@ -84,6 +90,9 @@
             margin-bottom: vh(15);
             h6{
                 font-size: vw(18);
+                @include ipad {
+                    font-size: vw(14.5);
+                }
                 &:after{
                     content: "";
                     display: block; 
@@ -91,11 +100,13 @@
                     padding-top: 5px;
                     border-bottom: 1px solid rgba(97, 208, 149, .95);
                     margin-bottom: vh(5);
-                    
                 } 
             }
             span{
                 margin-bottom: vh(8);
+                @include ipad {
+                    font-size: vw(11.5);
+                }
             }  
         }
     }

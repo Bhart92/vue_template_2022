@@ -23,6 +23,12 @@
             font-size: vw(18);
             margin: vh(15) 0 ;
             text-decoration: none;
+            @include ipad {
+                font-size: vw(14);
+            }
+            @include ipad-pro {
+                font-size: vw(13);
+            }
         }
     }
 }
@@ -70,8 +76,11 @@
                 -ms-user-select: none;
                 user-select: none;
                 @include ipad {
-                        transform: scale(1.5);
+                        transform: scale(2);
                         padding-right: vw(15);
+                }
+                @include ipad-pro {
+                        transform: scale(3);
                 }
         }
         .hamRotate.active {

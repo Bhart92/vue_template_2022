@@ -60,8 +60,11 @@
             bottom: vh(-20);
         }
         @include ipad {
-            transform: scale(1.35);
+            transform: scale(1.2);
             bottom: vh(65, $design-height-mobile);
+        }
+        @include ipad-pro{
+            transform: scale(1.5);
         }
     }
 }

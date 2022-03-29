@@ -15,6 +15,9 @@
         margin-bottom: vh(35);
         h1{
             font-size: vw(26);
+            @include ipad {
+                font-size: vh(19);
+            }
             span{
                 color: $blue;
             }
@@ -50,6 +53,9 @@
                 img{
                     height: 85%;
                     width: vw(200);
+                    @include ipad {
+                        max-width: 345px;
+                    }
                 }
             }
             .portfolio-info{
@@ -66,9 +72,15 @@
                 h6{
                     font-size: vw(18);
                     margin: vh(10) 0 vh(3) 0;   
+                    @include ipad {
+                        font-size: vh(17);
+                    }
                 }
                 span{
                     font-size: vw(14);
+                    @include ipad {
+                        font-size: vw(11.5);
+                    }
                 }
                 button{
                     z-index: 2;
@@ -84,7 +96,10 @@
                     font-size: vw(12);
                     letter-spacing: vw(.85);
                     margin: vh(15) 0 vh(25) 0;
-
+                    @include ipad {
+                        font-size: vw(11.5);
+                        padding: vh(10) vw(15);
+                    }
                 }
             }
         }
