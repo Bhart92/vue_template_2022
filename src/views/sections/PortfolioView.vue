@@ -1,4 +1,4 @@
-<template>
+ß<template>
   <section class="portfolio-container" id="portfolio-container">
 
    <div class="portfolio-title">
@@ -14,7 +14,7 @@
   </section>
 </template>
 <script>
-import PortfolioItem from '../components/portfolio/PortfolioItem.vue';
+import PortfolioItem from '../../components/portfolio/PortfolioItem.vue';
 export default {
     components: { PortfolioItem }
 }

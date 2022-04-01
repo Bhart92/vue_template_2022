@@ -1,4 +1,4 @@
-.services-container{
+.services-container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,8 @@
     align-items: flex-end;
     width: 100%;
     height: auto;
-    .services-module{
+
+    .services-module {
         height: auto;
         display: flex;
         flex-direction: column;
@@ -17,7 +18,8 @@
         letter-spacing: vw(1, $design-width-mobile);
         position: relative;
         z-index: 2;
-        &:last-of-type{
+
+        &:last-of-type {
             margin-top: vh(123);
             height: auto;
             align-self: flex-start;
@@ -25,24 +27,21 @@
             position: relative;
             z-index: 2;
             display: flex;
-            .background-container{
+
+            .background-container {
                 border-radius: 50%;
                 background: url('../assets/our-clients.svg');
-                background-position: top;
-                background-repeat: no-repeat;
                 background-size: cover;
                 height: vh(415);
                 width: 100%;
                 position: absolute;
                 top: vh(-70);
-                bottom: 0;
-                right: 0;
                 left: vw(-113);
                 z-index: 1;
                 opacity: .15;
             }
-            
-            .service-module-img{
+
+            .service-module-img {
                 height: vh(105);
                 width: vw(105);
                 position: relative;
@@ -52,25 +51,29 @@
                 z-index: 1;
                 align-self: flex-end;
             }
-            .services-module-sub{
+
+            .services-module-sub {
                 display: block;
                 position: relative;
                 z-index: 2;
-                span{
+
+                span {
                     font-size: vw(15);
                     font-weight: 500;
                     line-height: vh(25);
-                    @include ipad { 
+
+                    @include ipad {
                         font-size: vh(14);
                     }
                 }
             }
-            h1{  
+
+            h1 {
                 margin-bottom: vh(25);
             }
         }
 
-        .background-container{
+        .background-container {
             background: url('../assets/about-phone.svg');
             background-position: top;
             background-repeat: no-repeat;
@@ -85,18 +88,22 @@
             left: 0;
             z-index: 1;
         }
-        h1{
+
+        h1 {
             font-size: vw(26, $design-width-mobile);
             z-index: 2;
             position: relative;
+
             @include ipad {
-                font-size: vh(19);              
+                font-size: vh(19);
             }
         }
     }
-    .services-img-btm{
+
+    .services-img-btm {
         transform: scale(1.5);
         margin-top: 45px;
+
         @include ipad {
             transform: scale(1.1);
         }

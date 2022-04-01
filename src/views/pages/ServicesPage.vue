@@ -13,14 +13,14 @@
             <div class="services-seo">
                 <h2>How do we optimize?...</h2>
                 <div class="services-card-container">
-                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Meaningful content w/ keywords for SEO</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Semantically tagged and architected for web crawlers</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Designed with a Mobile-First approach</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Fully responsive to rock-it across any device</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Custom Logos</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Logo Touchups</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/checkItem.svg" alt="" /><span>Vector illustrations</span></div>
-                    <img class="services-icon-image" src="../assets/growth.png" alt="" />
+                    <div class="services-icon-wrapper"><img src="../../assets/checkItem.svg" alt="" /><span>Meaningful content w/ keywords for SEO</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/checkItem.svg" alt="" /><span>Semantically tagged and architected for web crawlers</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/checkItem.svg" alt="" /><span>Designed with a Mobile-First approach</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/checkItem.svg" alt="" /><span>Fully responsive to rock-it across any device</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/checkItem.svg" alt="" /><span>Custom Logos</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/checkItem.svg" alt="" /><span>Logo Touchups</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/checkItem.svg" alt="" /><span>Vector illustrations</span></div>
+                    <img class="services-icon-image" src="../../assets/growth.png" alt="" />
                 </div>
             </div>    
 
@@ -31,11 +31,11 @@
                 <span class="subHeader">We offer <span class="highlight">in-house</span> Logo & Graphic design. Our Designer has years of experience designing, mocking, and whipping up awesome logos.<br>
                 Our Logo package includes:</span>
                 <div class="services-card-container">
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>One Logo with 3 edits</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Exported & optimized in all formats</span></div>
-                    <div class="services-icon-wrapper"><img src="../assets/check.png" alt="" /><span>Starting at $350</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/check.png" alt="" /><span>One Logo with 3 edits</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/check.png" alt="" /><span>Exported & optimized in all formats</span></div>
+                    <div class="services-icon-wrapper"><img src="../../assets/check.png" alt="" /><span>Starting at $350</span></div>
                 </div>
-                <img class="services-logo-designer" src="../assets/designer.png" alt="" />
+                <img class="services-logo-designer" src="../../assets/designer.png" alt="" />
             </div>
             
             <div class="services-updates">
@@ -53,7 +53,7 @@
                 <div class="services-card-container">
 
                 </div>
-                <img class="services-logo-developer" src="../assets/unlimited.png" alt="" />
+                <img class="services-logo-developer" src="../../assets/unlimited.png" alt="" />
             </div>
             <div class="services-pricing">
                 <PricingCard :price="150" :cardHeader="'All services listed above'"
@@ -143,10 +143,10 @@
     
 </template>
 <script>
-import MenuContainer from '../components/NavBar/MenuContainer.vue';
-import PricingCard from '../components/pricing/PricingCard';
+import MenuContainer from '../../components/NavBar/MenuContainer.vue';
+import PricingCard from '../../components/pricing/PricingCard';
 
-import FooterSection from "../components/footer/FooterSection";
+import FooterSection from "../../components/footer/FooterSection";
 export default {
   components: { MenuContainer, PricingCard, FooterSection},
   created(){

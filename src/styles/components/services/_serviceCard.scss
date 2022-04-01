@@ -1,98 +1,114 @@
+.services-item-wrapper {
+    width: 85%;
+    margin: vh(50) auto;
+    background-color: #fff;
+    border-bottom: none;
+    box-shadow: 0 0 25px 5px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    border-top: 5px solid $blue;
 
-        .services-item-wrapper{
-            width: 85%;
-            margin: vh(50) auto;
-            background-color: #fff;
-            border-bottom: none;
-            box-shadow: 0 0 25px 5px rgb(0 0 0 / 5%);
-            border-radius: 5px;
-            border-top: 5px solid $blue;
-            @include ipad {
-                width: 75%;
-            }
-            &:first-of-type{
-                margin-top: vh(40);
-            }
-            &:nth-of-type(2){
-                .services-image{
-                    margin-top: vh(10);
-                    img{
-                        transform: scale(.9);
-                    }
-                }
-            }            
-            &:last-of-type{
-                margin-bottom: 0;
-                .services-image{
-                    margin-top: vh(20);
-                    img{
-                        transform: scale(.9);
-                    }
-                }
-            }
-            .services-image{
-                height: vh(200);
-                width: 100%;
-                background-color: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                @include ipad {
-                    margin: 0 auto;
-                    height: vh(150);
-                    max-width: 400px;
-                }
-                img{
-                    height: 100%;
-                    width: vw(295);
-                    @include ipad {
-                        width: vw(265);
-                    }
-                }
-            }
-            .services-info{     
-                display: flex;
-                flex-direction: column;
-                padding: 0 0 vh(20) vw(15);
-                width: 85%;
-                margin: 0 auto;
-                background-color: #fff;
-                color: $black;
+    @include ipad {
+        width: 75%;
+    }
 
-                h6{
-                    font-size: vw(18);
-                    margin: vh(10) 0 vh(10) 0;
-                    @include ipad {
-                        font-size: vw(16);
-                    }
-                }
-                span{
-                    font-size: vw(15);
-                    line-height: vh(20);
-                    @include ipad {
-                        line-height: vh(25);
-                        font-size: vw(12);
-                    }
-                }
-                button{
-                    margin: vh(22) 0 vh(10) 0;
-                    border: 2px solid $black;
-                    color: $black;
-                    background: transparent;
-                    padding: 10px 25px;
-                    border-radius: 25px;
-                    max-width: vw(120);
-                    @include small-phones{
-                        max-width: vw(145);
-                    }
-                    @include ipad {
-                        max-width: vw(65);
-                        transform: scale(1.35);
-                        margin-left: vw(10);
-                        margin-top: vh(25);
-                        margin-bottom: vh(10);
-                    }
-                }
+    &:first-of-type {
+        margin-top: vh(40);
+    }
+
+    &:nth-of-type(2) {
+        .services-image {
+            margin-top: vh(10);
+
+            img {
+                transform: scale(.9);
             }
         }
-        
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+
+        .services-image {
+            margin-top: vh(20);
+
+            img {
+                transform: scale(.9);
+            }
+        }
+    }
+
+    .services-image {
+        height: vh(200);
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include ipad {
+            margin: 0 auto;
+            height: vh(150);
+            max-width: 400px;
+        }
+
+        img {
+            height: 100%;
+            width: vw(295);
+
+            @include ipad {
+                width: vw(265);
+            }
+        }
+    }
+
+    .services-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 vh(20) vw(15);
+        width: 85%;
+        margin: 0 auto;
+        background-color: #fff;
+        color: $black;
+
+        h6 {
+            font-size: vw(18);
+            margin: vh(10) 0 vh(10) 0;
+
+            @include ipad {
+                font-size: vw(16);
+            }
+        }
+
+        span {
+            font-size: vw(15);
+            line-height: vh(20);
+
+            @include ipad {
+                line-height: vh(25);
+                font-size: vw(12);
+            }
+        }
+
+        button {
+            margin: vh(22) 0 vh(10) 0;
+            border: 2px solid $black;
+            color: $black;
+            background: transparent;
+            padding: 10px 25px;
+            border-radius: 25px;
+            max-width: vw(120);
+
+            @include small-phones {
+                max-width: vw(145);
+            }
+
+            @include ipad {
+                max-width: vw(65);
+                transform: scale(1.35);
+                margin-left: vw(10);
+                margin-top: vh(25);
+                margin-bottom: vh(10);
+            }
+        }
+    }
+}

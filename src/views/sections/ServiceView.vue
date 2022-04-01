@@ -20,13 +20,13 @@
    <ServiceAbout :title="'What does this mean for our clients?'"
     :subText="`Better Google rankings, more visitors, and bigger revenues as a result. Proper optimization can signficantly increase a website's exposure which in turn can in more business.`"
     />
-    <img class="services-img-btm" src="../assets/bank.svg" />
+    <img class="services-img-btm" src="../../assets/bank.svg" />
   </section>
 </template>
 
 <script>
-import ServiceAbout from '../components/services/ServiceAbout.vue';
-import ServiceCard from '../components/services/ServiceCard.vue';
+import ServiceAbout from '../../components/services/ServiceAbout.vue';
+import ServiceCard from '../../components/services/ServiceCard.vue';
 // @ is an alias to /src
 
 export default {

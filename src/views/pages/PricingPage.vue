@@ -24,7 +24,7 @@
           <PricingIncludes
             :title="'Logo designs'" :subText="`Need a logo? Our standard package includes a logo with 2 edits!`"/> 
 
-          <img class="pricing-module-image" src="../assets/pricing.png" />
+          <img class="pricing-module-image" src="../../assets/pricing.png" />
       </div>
       <div class="pricing-card-container">
 
@@ -115,10 +115,10 @@
     <FooterSection />
 </template>
 <script>
-import MenuContainer from "../components/NavBar/MenuContainer";
-import PricingIncludes from '../components/pricing/PricingIncludes';
-import PricingCard from '../components/pricing/PricingCard';
-import FooterSection from "../components/footer/FooterSection";
+import MenuContainer from "../../components/NavBar/MenuContainer";
+import PricingIncludes from '../../components/pricing/PricingIncludes';
+import PricingCard from '../../components/pricing/PricingCard';
+import FooterSection from "../../components/footer/FooterSection";
 export default {
     
   components: { PricingIncludes, PricingCard, MenuContainer, FooterSection },

@@ -1,4 +1,4 @@
-.about-container{
+.about-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,13 +8,15 @@
     position: relative;
     z-index: 3;
     height: vh(492);
+
     @include ipad {
         align-items: center;
         width: 92%;
         margin-left: auto;
         margin-right: auto;
     }
-    .about-module{
+
+    .about-module {
         height: auto;
         display: flex;
         width: 100%;
@@ -23,36 +25,44 @@
         padding: 0 25px 10px 25px;
         color: $black;
         letter-spacing: vw(1, $design-width-mobile);
-        h1{
+
+        h1 {
             font-size: vw(26, $design-width-mobile);
+
             @include ipad {
-                font-size: vh(19);              
+                font-size: vh(19);
             }
         }
-        .about-module-text{
+
+        .about-module-text {
             padding-top: vh(23);
             position: relative;
             z-index: 2;
             display: block;
-            .text{
+
+            .text {
                 position: relative;
                 top: vh(-10, $design-height-mobile);
                 font-size: vw(16, $design-width-mobile);
                 line-height: vh(30, $design-height-mobile);
                 font-weight: 500;
+
                 @include ipad {
-                    font-size: vh(14);              
+                    font-size: vh(14);
                 }
-                .highlight{
+
+                .highlight {
                     color: $blue;
                 }
-                .about-module-link{
+
+                .about-module-link {
                     color: $blue;
                     text-decoration: none;
                 }
             }
         }
-        .about-module-img{
+
+        .about-module-img {
             position: absolute;
             height: vh(225);
             width: vw(325);
@@ -61,6 +71,7 @@
             display: block;
             z-index: 1;
             border-radius: 35%;
+
             @include ipad {
                 width: vw(245);
                 height: vh(200);

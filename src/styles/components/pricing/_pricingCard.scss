@@ -1,4 +1,4 @@
-.pricing-card{
+.pricing-card {
     border: 2px solid $blue;
     border-bottom: none;
     height: auto;
@@ -6,16 +6,20 @@
     margin: vh(55) auto;
     margin-bottom: 0;
     color: $black;
+
     @include ipad {
         width: 85%;
     }
-    &:first-of-type{
-      margin-top: vh(25);
-      &.pricing-page-card{
+
+    &:first-of-type {
+        margin-top: vh(25);
+
+        &.pricing-page-card {
             margin-top: 0;
         }
     }
-    .pricing-card-background{
+
+    .pricing-card-background {
         background: url('../assets/cardBackground.svg');
         background-position: center;
         background-size: cover;
@@ -29,55 +33,68 @@
         z-index: 1;
         opacity: .15;
     }
-    .pricing-card-cost{
+
+    .pricing-card-cost {
         z-index: 2;
         margin-top: vh(15);
-            span{
-                font-size: vw(14);
-                letter-spacing: vw(1.25);
-                font-weight: 700;
-                margin-bottom: vh(0);
-                @include ipad {
-                    font-size: vw(12);
-                }
+
+        span {
+            font-size: vw(14);
+            letter-spacing: vw(1.25);
+            font-weight: 700;
+            margin-bottom: vh(0);
+
+            @include ipad {
+                font-size: vw(12);
             }
-            h5{
-                font-size: vw(42);
-                font-weight: 700;
-                color: $blue;
+        }
+
+        h5 {
+            font-size: vw(42);
+            font-weight: 700;
+            color: $blue;
+
+            @include ipad {
+                font-size: vw(38);
+            }
+
+            span {
+                font-size: vw(12);
+
                 @include ipad {
-                    font-size: vw(38);
-                }
-                span{
-                    font-size: vw(12);
-                    @include ipad {
-                        font-size: vw(10);
-                    }
+                    font-size: vw(10);
                 }
             }
         }
-    .pricing-card-list{
+    }
+
+    .pricing-card-list {
         z-index: 2;
-        h6{
+
+        h6 {
             font-size: vw(14);
             color: $blue;
             margin-bottom: vh(10);
+
             @include ipad {
                 font-size: vw(13);
             }
         }
-        .pricing-card-list-sub{
+
+        .pricing-card-list-sub {
             margin: 0;
             margin-top: vh(-10);
             font-size: vh(11);
         }
-        .pricing-card-info-wrap{
+
+        .pricing-card-info-wrap {
             margin-bottom: vh(3);
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             align-self: flex-start;
-            .pricing-card-info{
+
+            .pricing-card-info {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -85,53 +102,60 @@
                 width: vw(215);
                 max-width: vw(215);
                 min-width: vw(215);
-                    span{
-                        align-self: flex-start;
-                        font-size: vh(5);
-                        margin: vh(5) 0;
-                        display: flex;
-                        align-items: center;
-                        color: $black;
-                        @include ipad {
-                            font-size: vw(11.5);
-                        }
+
+                span {
+                    align-self: flex-start;
+                    font-size: vh(5);
+                    margin: vh(5) 0;
+                    display: flex;
+                    align-items: center;
+                    color: $black;
+
+                    @include ipad {
+                        font-size: vw(11.5);
                     }
-                    img{
-                        margin-right: vw(5);
-                        width: vw(17);
-                        height: vh(17);
-                    }
+                }
+
+                img {
+                    margin-right: vw(5);
+                    width: vw(17);
+                    height: vh(17);
+                }
             }
         }
-                    button{
-                        z-index: 2;
-                        margin: vh(15) 0 vh(20) 0;
-                        padding: 8px 10px;
-                        outline: none;
-                        border: 2px solid $black;
-                        opacity: .75;
-                        background: transparent;
-                        border-radius: 25px;
-                        align-self: flex-start;
-                        font-weight: 700;
-                        color: $black;
-                        font-size: vw(12);
-                        letter-spacing: vw(.85);
-                        @include ipad {
-                            padding: 15px 15px;
-                            transform: scale(1);
-                            font-size: vh(15);
-                        }
-                    }
+
+        button {
+            z-index: 2;
+            margin: vh(15) 0 vh(20) 0;
+            padding: 8px 10px;
+            outline: none;
+            border: 2px solid $black;
+            opacity: .75;
+            background: transparent;
+            border-radius: 25px;
+            align-self: flex-start;
+            font-weight: 700;
+            color: $black;
+            font-size: vw(12);
+            letter-spacing: vw(.85);
+
+            @include ipad {
+                padding: 15px 15px;
+                transform: scale(1);
+                font-size: vh(15);
+            }
+        }
     }
-    .pricing-card-title{
+
+    .pricing-card-title {
         z-index: 2;
         height: vh(45);
         border: 1px solid $blue;
         width: 101%;
         color: $white;
         background-color: $blue;
-        h4{
+
+        h4 {
             font-size: vh(18);
             letter-spacing: vw(2);
             font-weight: 700;

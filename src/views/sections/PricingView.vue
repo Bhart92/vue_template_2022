@@ -31,15 +31,15 @@
         :cardList="
             {
               carditemOne: {
-                itemImg: require('../assets/calendar.svg'),
+                itemImg: require('../../assets/calendar.svg'),
                 itemInfo: 'Appointment setting'
               },
               carditemTwo: {
-                itemImg: require('../assets/phoneOrder.png'),
+                itemImg: require('../../assets/phoneOrder.png'),
                 itemInfo: 'Order Placing'
               },
               carditemThree: {
-                itemImg: require('../assets/custom.png'),
+                itemImg: require('../../assets/custom.png'),
                 itemInfo: 'Custom features'
               },
             }
@@ -50,15 +50,15 @@
         :cardList="
           {
             carditemOne: {
-              itemImg: require('../assets/calendar.svg'),
+              itemImg: require('../../assets/calendar.svg'),
               itemInfo: 'Infinite edits & changes'
             },
             carditemThree: {
-              itemImg: require('../assets/custom.png'),
+              itemImg: require('../../assets/custom.png'),
               itemInfo: 'Hosting fees built-in'
             },
             carditemFour: {
-              itemImg: require('../assets/custom.png'),
+              itemImg: require('../../assets/custom.png'),
               itemInfo: 'Free Logo w/2 edits'
             },
           }"
@@ -68,15 +68,15 @@
         :cardList="
             {
               carditemOne: {
-                itemImg: require('../assets/calendar.svg'),
+                itemImg: require('../../assets/calendar.svg'),
                 itemInfo: 'Logo w/ two edits'
               },
               carditemTwo: {
-                itemImg: require('../assets/phoneOrder.png'),
+                itemImg: require('../../assets/phoneOrder.png'),
                 itemInfo: 'Optimized & exported in all formats'
               },
               carditemThree: {
-                itemImg: require('../assets/custom.png'),
+                itemImg: require('../../assets/custom.png'),
                 itemInfo: 'Free with every web package!'
               },
             }
@@ -88,8 +88,8 @@
 </template>
 
 <script>
-import PricingIncludes from '../components/pricing/PricingIncludes';
-import PricingCard from '../components/pricing/PricingCard';
+import PricingIncludes from '../../components/pricing/PricingIncludes';
+import PricingCard from '../../components/pricing/PricingCard';
 export default {
   name: "PricingView",
   components: {PricingCard, PricingIncludes},

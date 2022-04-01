@@ -22,7 +22,7 @@
             <h1>We bring the big agency<br> 
             experience to small<br>
             businesses.</h1>
-            <img class="about-extra-image" src="../assets/about-extra.png" alt="" />
+            <img class="about-extra-image" src="../../assets/about-extra.png" alt="" />
             <div class="about-extra-desc">
                 <p>Our developers have experience<br>
                 working in some of the biggest<br>
@@ -46,13 +46,13 @@
             </div>
         </div>
     </main>
-    <img class="about-bottom-graphic" src="../assets/about-page-icon.png" alt="" />
+    <img class="about-bottom-graphic" src="../../assets/about-page-icon.png" alt="" />
     <FooterSection />
 </section>
 </template>
 <script>
-import MenuContainer from "../components/NavBar/MenuContainer";
-import FooterSection from "../components/footer/FooterSection";
+import MenuContainer from "../../components/NavBar/MenuContainer";
+import FooterSection from "../../components/footer/FooterSection";
 export default {
     components: { MenuContainer, FooterSection },
     created(){

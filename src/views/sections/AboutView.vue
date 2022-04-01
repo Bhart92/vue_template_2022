@@ -15,7 +15,7 @@
             <router-link to="/about" class="about-module-link">Click here<br>to learn more...</router-link>
       </span>
       
-    <img class="about-module-img" src="../assets/collab.png" alt="A happy looking face" />
+    <img class="about-module-img" src="../../assets/collab.png" alt="A happy looking face" />
     </div>
    </div>
   </section>

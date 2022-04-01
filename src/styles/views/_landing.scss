@@ -1,16 +1,18 @@
-.landing-container{
+.landing-container {
     position: relative;
-.landing-background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    display: block;
-    background-position: 2%;
-}
-    .landing-hero{
+
+    .landing-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        display: block;
+        background-position: 2%;
+    }
+
+    .landing-hero {
         width: 85%;
         text-align: left;
         margin: 0 auto;
@@ -21,27 +23,33 @@
         font-size: vw(22, $design-width-mobile);
         margin-top: vh(-138, $design-height-mobile);
         z-index: 2;
-        h1{
+
+        h1 {
             font-weight: 700;
             margin-bottom: vh(10, $design-height-mobile);
+
             @include ipad {
                 margin-bottom: vh(20);
                 font-size: vh(20);
             }
         }
-        h2{
+
+        h2 {
             font-size: vw(14, $design-width-mobile);
             margin-bottom: vh(20, $design-height-mobile);
+
             @include ipad {
                 font-size: vh(15);
             }
         }
-        .landing-btn{
+
+        .landing-btn {
             font-size: vw(14, $design-width-mobile);
             background: transparent;
             border: 2px solid $white;
             color: $white;
             letter-spacing: vw(1);
+
             @include ipad {
                 font-size: vh(12);
                 max-width: 150px;
@@ -49,21 +57,25 @@
 
         }
     }
-    .landing-mockup{
+
+    .landing-mockup {
         height: vh(400, $design-height-mobile);
         max-height: 345px;
         width: 100%;
         max-width: 405px;
         position: absolute;
         bottom: vh(25, $design-height-mobile);
-        @include small-phones{            
+
+        @include small-phones {
             bottom: vh(-20);
         }
+
         @include ipad {
             transform: scale(1.2);
             bottom: vh(65, $design-height-mobile);
         }
-        @include ipad-pro{
+
+        @include ipad-pro {
             transform: scale(1.5);
         }
     }

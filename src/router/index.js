@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import LandingView from "../views/LandingView.vue";
+import LandingView from "../views/sections/LandingView.vue";
 
 const routes = [
   {
@@ -11,25 +11,25 @@ const routes = [
     path: "/about",
     name: "about",
     component: () =>
-      import("../views/AboutPage.vue"),
+      import("../views/pages/AboutPage.vue"),
   },
   {
     path: "/services",
     name: "services",
     component: () =>
-      import("../views/ServicesPage.vue"),
+      import("../views/pages/ServicesPage.vue"),
   },
   {
     path: "/pricing",
     name: "pricing",
     component: () =>
-      import("../views/PricingPage.vue"),
+      import("../views/pages/PricingPage.vue"),
   },
   {
     path: "/contact",
     name: "contact",
     component: () =>
-      import("../views/ContactPage.vue"),
+      import("../views/pages/ContactPage.vue"),
   },
 ];
 

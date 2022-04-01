@@ -1,11 +1,12 @@
-.about-page{
+.about-page {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding-top: vh(100);
     background-position: 53%;
     height: auto;
-    .background-container{
+
+    .background-container {
         position: absolute;
         top: 0;
         left: 0;
@@ -15,40 +16,48 @@
         display: block;
         z-index: 1;
     }
-    main{
+
+    main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
         z-index: 2;
         padding: 0 vw(13);
-        h1{
+
+        h1 {
             color: $white;
             font-size: vw(26);
+
             @include ipad {
                 font-size: vw(14.5);
             }
         }
-        .about-description{
+
+        .about-description {
             color: $white;
             margin-top: vh(15);
-            // background: rgba(0, 0, 0, 0.025);
             border-radius: 10%;
-            p{
+
+            p {
                 font-size: vw(16);
                 line-height: vh(25);
+
                 @include ipad {
                     font-size: vw(11.5);
                 }
-                span{
-                    color: $white!important;
+
+                span {
+                    color: $white !important;
                 }
             }
         }
-        .about-extra{
+
+        .about-extra {
             margin-top: vh(223);
             position: relative;
-            .about-extra-image{
+
+            .about-extra-image {
                 position: absolute;
                 top: vh(143);
                 right: vw(-20);
@@ -56,42 +65,41 @@
                 transform: scale(1.3);
                 display: block;
                 z-index: 1;
+
                 @include ipad {
                     top: vh(130);
                     right: vw(-65);
                     transform: scale(1);
                 }
             }
-            h1{
+
+            h1 {
                 color: $black;
                 margin-bottom: vh(10);
-                &:after{
-                    content: "";
-                    display: block; 
-                    width: 35px; 
-                    padding-top: 5px;
-                    border-bottom: 2px solid $blue;
-                    
-                }   
             }
-            .about-extra-desc{
+
+            .about-extra-desc {
                 position: relative;
                 display: block;
                 z-index: 2;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                p{
+
+                p {
                     line-height: vh(27);
                     font-size: vw(17);
+
                     @include ipad {
                         font-size: vw(11.5);
                     }
-                    .highlight{
+
+                    .highlight {
                         color: $blue;
                     }
                 }
-                .about-services-link{
+
+                .about-services-link {
                     border: 2px solid $black;
                     color: $black;
                     border-radius: 25px;
@@ -102,6 +110,7 @@
                     margin-top: vh(45);
                     margin-bottom: vh(21);
                     font-size: vw(17);
+
                     @include ipad {
                         font-size: vw(11.5);
                     }
@@ -109,7 +118,8 @@
             }
         }
     }
-    .about-bottom-graphic{
+
+    .about-bottom-graphic {
         height: vh(90);
         width: vw(90);
         position: absolute;

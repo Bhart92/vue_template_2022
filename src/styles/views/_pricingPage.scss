@@ -1,4 +1,4 @@
-.pricing-page{
+.pricing-page {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -7,7 +7,8 @@
     overflow-x: hidden;
     position: relative;
     height: auto;
-    .pricing-background{
+
+    .pricing-background {
         position: absolute;
         top: 0;
         left: 0;
@@ -17,192 +18,270 @@
         display: block;
         z-index: 1;
     }
-    main{
+
+    main {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         position: inherit;
         z-index: 2;
-        h1{
+
+        h1 {
             color: $white;
             font-size: vw(26);
+
+            @include ipad {
+                font-size: vh(19);
+            }
         }
-        span{
+
+        span {
             margin-top: vh(5);
-            font-size: vw(14);
+            font-size: vw(15);
         }
-        
-    .pricing-module{
-        height: auto;
-        align-self: flex-end;
-        color: $black;
-        position: relative;
-        z-index: 2;
-        display: flex;
-        
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px 40px;
-        min-width: vw(375);
-        padding-top: vh(25);
-        .background-container{
-            border-radius: 50%;
-            background: url('../assets/our-clients.svg');
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: vh(415);
-            width: 100%;
-            position: absolute;
-            top: vh(-96);
-            bottom: 0;
-            right: vw(-195);
-            z-index: 1;
-            opacity: .15;
-        }
-        h1{
-            text-align: right;
-            font-size: vw(22, $design-width-mobile);
-            z-index: 2;
-            position: relative;
-            margin-bottom: vh(30);       
-        }
-        .pricing-cost{
-            height: vw(95);
-            width: vw(95);
-            margin: 0 auto;
-            margin-top: vh(20);
-        }
-        .pricing-module-sub{
-            display: block;
+
+        .pricing-module {
+            height: auto;
+            align-self: flex-end;
+            color: $black;
             position: relative;
             z-index: 2;
-            text-align: left;
-            h2{
-                color: $white;
-                font-size: vw(26);
+            display: flex;
+
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 40px;
+            min-width: vw(375);
+            padding-top: vh(25);
+
+            .background-container {
+                border-radius: 50%;
+                background: url('../assets/our-clients.svg');
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: vh(415);
+                width: 100%;
+                position: absolute;
+                top: vh(-96);
+                bottom: 0;
+                right: vw(-195);
+                z-index: 1;
+                opacity: .15;
             }
-            .pricing-sub-head{
-                margin-bottom: 0;
-            }
-            h3{
-                color: $white;
-                font-size: vw(10);
-                margin-top: vh(5);
-                text-align: center;
-                font-weight: 400;
-                &:last-of-type{
-                    font-size: vw(10);
-                    margin-bottom: vh(8);
-                    margin-top: 0;
+
+            h1 {
+                text-align: right;
+                font-size: vw(22, $design-width-mobile);
+                z-index: 2;
+                position: relative;
+                margin-bottom: vh(30);
+
+                @include ipad {
+                    font-size: vh(19);
                 }
             }
-            h4{
-                color: $white;
-                font-size: vw(20);
+
+            .pricing-cost {
+                height: vw(95);
+                width: vw(95);
+                margin: 0 auto;
                 margin-top: vh(20);
-                @include main-phone-break {    
-                    margin-top: vh(10);
-                }
-                @include iphone-x {    
-                    margin-top: vh(20);
-                }
-                @include iphone-xr{
-                    margin-top: vh(25);
-                }
-                @include iphone-12 {    
-                    margin-top: vh(20);
-                }
             }
-            h4.first-includes{
-                color: $white;
-            }
-            .pricing-includes-item{
-                margin: vh(20) auto;
-                display: flex;
-                &:first-of-type{
-                    margin-top: vh(20);
-                    margin-bottom: 0;
+
+            .pricing-module-sub {
+                display: block;
+                position: relative;
+                z-index: 2;
+                text-align: left;
+
+                h2 {
                     color: $white;
-                    @include iphone-xr{
-                        margin-top: vh(25);
+                    font-size: vw(26);
+
+                    @include ipad {
+                        font-size: vh(22);
+                        text-align: center;
+                        margin: vh(10) auto vh(10) auto;
                     }
-                    
-                    @include iphone-6-plus{
+                }
+
+                .pricing-sub-head {
+                    margin-bottom: 0;
+                }
+
+                h3 {
+                    color: $white;
+                    font-size: vw(10);
+                    margin-top: vh(5);
+                    text-align: center;
+                    font-weight: 400;
+
+                    @include ipad {
+                        font-size: vh(19);
+                    }
+
+                    &:last-of-type {
+                        font-size: vw(10);
+                        margin-bottom: vh(8);
+                        margin-top: 0;
+                    }
+                }
+
+                h4 {
+                    color: $white;
+                    font-size: vw(20);
+                    margin-top: vh(20);
+
+                    @include ipad {
+                        font-size: vh(18);
+                    }
+
+                    @include main-phone-break {
                         margin-top: vh(10);
                     }
-                    span{
-                        color: $white;
-                    }
-                }
-                &:nth-of-type(2){
-                    color: $white;
-                    margin-bottom: vh(80);
-                    @include main-phone-break {
-                        margin-bottom: vh(105);
-                    }
-                    @include iphone-x{
-                        margin-bottom: vh(110);
-                    }
-                    @include iphone-12{
-                        margin-bottom: vh(105);
-                    }
-                    @include iphone-xr{
-                        margin-bottom: vh(105);
-                    }
-                    span{
-                        color: $white;
-                    }
-                }
-                &:last-of-type{
-                    margin-bottom: 0;
-                }
-                h5{
-                    font-size: vw(20);
-                    margin-bottom: vh(3);
-                }
-                span{
-                font-size: vw(16);
-                color: $black;
-                }
-                .pricing-item-img{
-                    height: vh(35);
-                    width: vw(35);
-                    min-height: 35px;
-                    min-width: 35px;
-                    align-self: flex-start;
-                    margin-right: vw(15);
-                    margin-left: vw(-15);
-                    img{
-                        height: 100%;
-                        width: 100%;
-                    }
-                }
-            }
-            span{
-                font-size: vw(15);
-                font-weight: 500;
-                line-height: vh(25);
 
-            }
-            
-        .pricing-module-image{
-            height: vh(223);
-            width: vw(289);
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            margin: vh(40) auto;
-        }
-        }
-        .pricing-card-container{
-            .pricing-card{
-                &:last-of-type{
-                    margin-bottom: vh(17);
+                    @include iphone-x {
+                        margin-top: vh(20);
+                    }
+
+                    @include iphone-xr {
+                        margin-top: vh(25);
+                    }
+
+                    @include iphone-12 {
+                        margin-top: vh(20);
+                    }
+                }
+
+                h4.first-includes {
+                    color: $white;
+                }
+
+                .pricing-includes-item {
+                    margin: vh(20) auto;
+                    display: flex;
+
+                    @include ipad {
+
+                        margin-top: vh(30);
+                    }
+
+                    &:first-of-type {
+                        margin-top: vh(20);
+                        margin-bottom: 0;
+                        color: $white;
+
+                        @include ipad {
+                            margin-top: vh(30);
+                        }
+
+                        @include iphone-xr {
+                            margin-top: vh(25);
+                        }
+
+                        @include iphone-6-plus {
+                            margin-top: vh(10);
+                        }
+
+                        span {
+                            color: $white;
+
+                            @include ipad {
+                                font-size: vh(15);
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        color: $white;
+                        margin-bottom: vh(80);
+
+                        @include main-phone-break {
+                            margin-bottom: vh(105);
+                        }
+
+                        @include iphone-x {
+                            margin-bottom: vh(110);
+                        }
+
+                        @include iphone-12 {
+                            margin-bottom: vh(105);
+                        }
+
+                        @include iphone-xr {
+                            margin-bottom: vh(105);
+                        }
+
+                        span {
+                            color: $white;
+
+                            @include ipad {
+                                font-size: vh(15);
+                            }
+                        }
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+
+                    h5 {
+                        font-size: vw(20);
+                        margin-bottom: vh(3);
+
+                        @include ipad {
+                            font-size: vh(15);
+                        }
+                    }
+
+                    span {
+                        color: $black;
+
+                        @include ipad {
+                            font-size: vh(15);
+                        }
+                    }
+
+                    .pricing-item-img {
+                        height: vh(35);
+                        width: vw(35);
+                        min-height: 35px;
+                        min-width: 35px;
+                        align-self: flex-start;
+                        margin-right: vw(15);
+                        margin-left: vw(-15);
+
+                        @include ipad {
+                            max-height: 35px;
+                            max-width: 35px;
+                            min-height: unset;
+                            min-height: unset;
+                            margin-left: 0;
+                        }
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                span {
+                    font-weight: 500;
+                    line-height: vh(25);
+                }
+
+                .pricing-module-image {
+                    height: vh(223);
+                    width: vw(289);
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin: vh(40) auto;
                 }
             }
         }
-    }
     }
 }
