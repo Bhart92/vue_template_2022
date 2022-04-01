@@ -64,10 +64,10 @@
 
         .about-module-img {
             position: absolute;
-            height: vh(225);
-            width: vw(325);
+            height: vh(211);
+            width: vw(302);
             bottom: 0;
-            right: 0;
+            right: vw(-87);
             display: block;
             z-index: 1;
             border-radius: 35%;

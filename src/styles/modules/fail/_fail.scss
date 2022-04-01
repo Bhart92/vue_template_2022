@@ -1,0 +1,15 @@
+.fail-container{
+    background-color: $white;
+    opacity: 0;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    z-index: 15;
+    transition: opacity .35s ease;
+}

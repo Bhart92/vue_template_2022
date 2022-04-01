@@ -88,7 +88,7 @@
 
                 p {
                     line-height: vh(27);
-                    font-size: vw(17);
+                    font-size: vw(16);
 
                     @include ipad {
                         font-size: vw(11.5);
@@ -109,7 +109,7 @@
                     align-self: center;
                     margin-top: vh(45);
                     margin-bottom: vh(21);
-                    font-size: vw(17);
+                    font-size: vw(16);
 
                     @include ipad {
                         font-size: vw(11.5);

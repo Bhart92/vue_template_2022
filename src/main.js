@@ -42,4 +42,17 @@ smoothscroll.polyfill();
                 }, 500);
         });
     };
+
+    const setOrientation = () => {
+        if(screen.orientation.angle != 0) {
+            store.commit("setIsRotated", true);
+        } else {
+            store.commit("setIsRotated", false);
+        }
+    };
+
     setViewportHeight();
+    setOrientation();
+    screen.orientation.addEventListener("change", function(e) {
+        setOrientation();
+    });
